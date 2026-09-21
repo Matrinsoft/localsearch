@@ -1,0 +1,924 @@
+# Italian translation of tracker
+# Copyright (C) 2006, 2007, 2008, 2009, 2012, 2013, 2014, 2015, 2017, 2018, 2019 Free Software Foundation, Inc
+# Copyright (C) 2020, 2021 Free Software Foundation, Inc
+# This file is distributed under the same license as the tracker package.
+#
+# Glossario:
+# stop words → parole sentinella
+# miner → estrattore, estrattore [di] dati
+# crawl → acquisizione dati
+# pause → interrompere
+#
+# Luca Ferretti <lferrett@gnome.org>, 2006, 2007, 2008, 2009, 2012.
+# Milo Casagrande <milo@milo.name>, 2013, 2014, 2015, 2017, 2018, 2019, 2020, 2021.
+# Gianvito Cavasoli <gianvito@gmx.it>, 2023.
+# Leonardo Pantani <leonardo.pantani@gmail.com>, 2026.
+# Davide Ferracin <davide.ferracin@icloud.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tracker\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/localsearch/issues/\n"
+"POT-Creation-Date: 2026-03-15 00:39+0000\n"
+"PO-Revision-Date: 2026-05-29 22:26+0200\n"
+"Last-Translator: Davide Ferracin <davide.ferracin@icloud.com>\n"
+"Language-Team: Italian <gnome-it-list@gnome.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 50.0\n"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:23
+msgid "Max bytes to extract"
+msgstr "Numero massimo di byte da estrarre"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:24
+msgid "Maximum number of UTF-8 bytes to extract."
+msgstr "Numero massimo di byte UTF-8 da estrarre."
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:30
+msgid "Text file allowlist"
+msgstr "Elenco file di testo consentiti"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:31
+msgid "Filename patterns for plain text documents that should be indexed"
+msgstr "Modelli di nomi di file per documenti di testo da indicizzare"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:37
+msgid "Wait for FS miner to be done before extracting"
+msgstr ""
+"Attende il completamento dell'analizzatore del file system prima di estrarre"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:38
+msgid ""
+"When true, tracker-extract will wait for tracker-miner-fs to be done "
+"crawling before extracting meta-data. This option is useful on constrained "
+"environment where it is important to list files as fast as possible and can "
+"wait to get meta-data later."
+msgstr ""
+"Se VERO, tracker-extract attende il completamento di tracker-miner-fs prima "
+"di estrarre i metadati. Questa opzione è utile su sistemi limitati dove è "
+"importante elencare i file velocemente ed è possibile attendere il recupero "
+"dei metadati."
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:24
+msgid "Enable stemmer"
+msgstr "Abilita lo stemmer"
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:25
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:31
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:37
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:24
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:31
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:38
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:45
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:52
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:71
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:77
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:83
+msgid "This setting is deprecated"
+msgstr "Questa impostazione è deprecata"
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:30
+msgid "Enable unaccent"
+msgstr "Abilita lettere senza accento"
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:36
+msgid "Ignore numbers"
+msgstr "Ignora i numeri"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:23
+msgid "Initial sleep"
+msgstr "Pausa iniziale"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:30
+msgid "Throttle"
+msgstr "Velocità"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:37
+msgid "Low disk space limit"
+msgstr "Limite minimo dello spazio su disco"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:44
+msgid "Crawling interval"
+msgstr "Intervallo acquisizione dati"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:51
+msgid "Removable devices’ data permanence threshold"
+msgstr "Limite di permanenza dei dati sui dispositivi rimovibili"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:58
+msgid "Enable monitors"
+msgstr "Abilita il monitoraggio"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:59
+msgid "Set to false to completely disable any file monitoring"
+msgstr "Impostare a FALSO per disabilitare il monitoraggio dei file"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:64
+msgid "Index removable devices"
+msgstr "Indicizza dispositivi rimovibili"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:65
+msgid ""
+"Set to true to enable indexing mounted directories for removable devices."
+msgstr ""
+"Impostare a VERO per indicizzare le directory da dispositivi rimovibili "
+"montati."
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:70
+msgid "Index optical discs"
+msgstr "Indicizza dischi ottici"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:76
+msgid "Index when running on battery"
+msgstr "Indicizza quando alimentato a batteria"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:82
+msgid "Perform initial indexing when running on battery"
+msgstr "Esegue l'indicizzazione iniziale quando alimentato a batteria"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:88
+msgid "Directories to index recursively"
+msgstr "Directory da indicizzare ricorsivamente"
+
+#. Translators: Do NOT translate the directories names in capital. Those
+#. are keys used by Tracker.
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:91
+msgid ""
+"List of directories to index recursively, Special values include: "
+"‘&DESKTOP’, ‘&DOCUMENTS’, ‘&DOWNLOAD’, ‘&MUSIC’, ‘&PICTURES’, "
+"‘&PUBLIC_SHARE’, ‘&TEMPLATES’, ‘&VIDEOS’. See /etc/xdg/user-dirs.defaults "
+"and $HOME/.config/user-dirs.default"
+msgstr ""
+"Elenco di directory da indicizzare ricorsivamente, i valori speciali sono: "
+"\"&amp;DESKTOP\", \"&amp;DOCUMENTS\", \"&amp;DOWNLOAD\", \"&amp;MUSIC\", "
+"\"&amp;PICTURES\", \"&amp;PUBLIC_SHARE\", \"&amp;TEMPLATES\", "
+"\"&amp;VIDEOS\". Consultare /etc/xdg/user-dirs.defaults e $HOME/.config/user-"
+"dirs.default"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:102
+msgid "Directories to index non-recursively"
+msgstr "Directory da non indicizzare ricorsivamente"
+
+#. Translators: Do NOT translate the directories names in capital. Those
+#. are keys used by Tracker.
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:105
+msgid ""
+"List of directories to index without inspecting subfolders, Special values "
+"include: ‘&DESKTOP’, ‘&DOCUMENTS’, ‘&DOWNLOAD’, ‘&MUSIC’, ‘&PICTURES’, "
+"‘&PUBLIC_SHARE’, ‘&TEMPLATES’, ‘&VIDEOS’. See /etc/xdg/user-dirs.defaults "
+"and $HOME/.config/user-dirs.default"
+msgstr ""
+"Elenco di directory indicizzare non ricorsivamente, i valori speciali sono: "
+"\"&amp;DESKTOP\", \"&amp;DOCUMENTS\", \"&amp;DOWNLOAD\", \"&amp;MUSIC\", "
+"\"&amp;PICTURES\", \"&amp;PUBLIC_SHARE\", \"&amp;TEMPLATES\", "
+"\"&amp;VIDEOS\". Consultare /etc/xdg/user-dirs.defaults e $HOME/.config/user-"
+"dirs.default"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:116
+msgid "Ignored files"
+msgstr "File ignorati"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:117
+msgid "List of file patterns to avoid"
+msgstr "Elenco di modelli di file da ignorare"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:122
+msgid "Ignored directories"
+msgstr "Directory ignorate"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:123
+msgid "List of directories to avoid"
+msgstr "Elenco di directory da ignorare"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:128
+msgid "Ignored directories with content"
+msgstr "Directory con contenuti da ignorare"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:129
+msgid "Avoid any directory containing a file blocklisted here"
+msgstr "Ignora qualsiasi directory che contiene un file elencato qui"
+
+#: src/cli/main.c:68
+msgid "Show help on subcommands"
+msgstr "Mostra l'aiuto per i sottocomandi"
+
+#: src/cli/main.c:69
+msgid "Show metadata extractor output"
+msgstr "Mostra l'output dell'estrattore di metadati"
+
+#: src/cli/main.c:70 src/cli/tracker-index.c:382
+msgid "List and change indexed folders"
+msgstr "Elenca o cambia le cartelle indicizzate"
+
+#: src/cli/main.c:71 src/cli/tracker-info.c:533
+msgid "Retrieve information available for files and resources"
+msgstr "Recupera le informazioni disponibili di file e risorse"
+
+#: src/cli/main.c:72 src/cli/tracker-inhibit.c:98
+msgid "Inhibit indexing temporarily"
+msgstr "Inibisce temporaneamente l'indicizzazione"
+
+#: src/cli/main.c:73 src/cli/tracker-reset.c:202
+msgid "Erase the indexed data"
+msgstr "Elimina i dati indicizzati"
+
+#: src/cli/main.c:74 src/cli/tracker-search.c:415
+msgid "Search for content"
+msgstr "Cerca contenuti"
+
+#: src/cli/main.c:75 src/cli/tracker-status.c:727
+msgid "Provide status and statistics on the data indexed"
+msgstr "Fornisce stato e statistiche sui dati indicizzati"
+
+#: src/cli/main.c:76 src/cli/tracker-tag.c:411
+msgid "Add, remove and list tags"
+msgstr "Aggiunge, rimuove ed elenca le etichette"
+
+#: src/cli/main.c:77
+msgid "Sandbox for a testing environment"
+msgstr "Sandbox per un ambiente di prova"
+
+#: src/cli/main.c:122
+msgid "Available localsearch commands are:"
+msgstr "Comandi disponibili per localsearch:"
+
+#: src/cli/main.c:141
+msgid "See “localsearch help <command>” to read about a specific subcommand."
+msgstr ""
+"Eseguire «localsearch help <comando>» per sapere di più riguardo a uno "
+"specifico sottocomando."
+
+#: src/cli/main.c:184
+#, c-format
+msgid "“%s” is not a localsearch command. See “localsearch --help”"
+msgstr "«%s» non è un comando di localsearch. Consultare «localsearch --help»"
+
+#: src/cli/tracker-cli-utils.c:179 src/cli/tracker-status.c:376
+msgid "Message"
+msgstr "Messaggio"
+
+#: src/cli/tracker-extract.c:44 src/cli/tracker-info.c:75
+#: src/extractor/tracker-main.c:82
+msgid "Output results format: “turtle”, “trig” or “json-ld”"
+msgstr "Formato di output dei risultati: «turtle», «trig» o «json-ld»"
+
+#: src/cli/tracker-extract.c:45 src/cli/tracker-info.c:76
+#: src/extractor/tracker-main.c:83
+msgid "FORMAT"
+msgstr "FORMATO"
+
+#: src/cli/tracker-extract.c:47 src/cli/tracker-extract.c:48
+#: src/cli/tracker-index.c:60 src/cli/tracker-index.c:61
+#: src/cli/tracker-info.c:84 src/cli/tracker-info.c:85
+#: src/cli/tracker-reset.c:52 src/extractor/tracker-main.c:76
+#: src/extractor/tracker-main.c:91 src/indexer/tracker-application.c:62
+msgid "FILE"
+msgstr "FILE"
+
+#: src/cli/tracker-extract.c:94
+msgid "Could not run tracker-extract: "
+msgstr "Impossibile eseguire tracker-extract: "
+
+#: src/cli/tracker-extract.c:131
+msgid "Extract metadata from a file"
+msgstr "Estrae metadati dai file"
+
+#: src/cli/tracker-extract.c:138 src/cli/tracker-index.c:387
+#: src/cli/tracker-info.c:540 src/cli/tracker-inhibit.c:113
+#: src/cli/tracker-reset.c:207 src/cli/tracker-search.c:428
+#: src/cli/tracker-status.c:732 src/cli/tracker-tag.c:416
+msgid "Unrecognized options"
+msgstr "Opzioni non riconosciute"
+
+#: src/cli/tracker-index.c:51
+msgid "Adds FILE as an indexed location"
+msgstr "Aggiunge FILE come posizione indicizzata"
+
+#: src/cli/tracker-index.c:54
+msgid "Removes FILE from indexed locations"
+msgstr "Rimuove FILE dalle posizioni indicizzate"
+
+#: src/cli/tracker-index.c:57
+msgid "Makes indexing recursive"
+msgstr "Rende l'indicizzazione ricorsiva"
+
+#: src/cli/tracker-index.c:205
+#, c-format
+msgid "“%s” is not a directory"
+msgstr "«%s» non è una directory"
+
+#. TRANSLATORS: These are commandline options
+#: src/cli/tracker-index.c:281
+msgid "Either --add or --remove must be provided"
+msgstr "Deve essere fornito --add o --remove"
+
+#. TRANSLATORS: These are commandline options
+#: src/cli/tracker-index.c:285
+msgid "--add and --remove are mutually exclusive"
+msgstr "--add e --remove non possono essere utilizzate assieme"
+
+#. TRANSLATORS: These are commandline options
+#: src/cli/tracker-index.c:295
+msgid "--recursive requires --add"
+msgstr "--recursive richiede --add"
+
+#: src/cli/tracker-index.c:353 src/cli/tracker-status.c:375
+msgid "Path"
+msgstr "Percorso"
+
+#: src/cli/tracker-index.c:354
+msgid "Recursive"
+msgstr "Ricorsivamente"
+
+#: src/cli/tracker-index.c:396
+msgid "Please specify one or more locations to index."
+msgstr "Specificare una o più posizioni da indicizzare."
+
+#: src/cli/tracker-info.c:67
+msgid "Show full namespaces (i.e. don’t use nie:title, use full URLs)"
+msgstr "Mostra il namespace completo (non usa nie:title, ma URL completi)"
+
+#: src/cli/tracker-info.c:71
+msgid "Show plain text content if available for resources"
+msgstr "Mostra, se disponibili, i contenuti in testo semplice"
+
+#: src/cli/tracker-info.c:78
+msgid "Checks if FILE is eligible for being indexed"
+msgstr "Controlla se FILE è idoneo all'indicizzazione"
+
+#: src/cli/tracker-info.c:81 src/cli/tracker-search.c:189
+#: src/cli/tracker-status.c:80
+msgid "Removable device mount point to query"
+msgstr "Punto di mount del dispositivo rimovibile da interrogare"
+
+#: src/cli/tracker-info.c:357 src/cli/tracker-search.c:370
+#: src/cli/tracker-status.c:158 src/cli/tracker-status.c:276
+msgid "Could not connect to LocalSearch"
+msgstr "Impossibile stabilire una connessione con LocalSearch"
+
+#: src/cli/tracker-info.c:405
+msgid "Unable to retrieve data for URI"
+msgstr "Impossibile recuperare dati per l'URI"
+
+#: src/cli/tracker-info.c:412
+msgid "No metadata available for that URI"
+msgstr "Nessun metadato disponibile per quell'URI"
+
+#: src/cli/tracker-info.c:422 src/cli/tracker-info.c:499
+msgid "Could not get eligible status: "
+msgstr "Impossibile ottenere lo stato di idoneità: "
+
+#: src/cli/tracker-info.c:451 src/extractor/tracker-main.c:189
+#, c-format
+msgid "Unsupported serialization format “%s”\n"
+msgstr "Formato di output «%s» non supportato\n"
+
+#: src/cli/tracker-inhibit.c:39
+msgid "List inhibitions"
+msgstr "Elenca inibizioni"
+
+#: src/cli/tracker-inhibit.c:45
+msgid "command"
+msgstr "comando"
+
+#: src/cli/tracker-inhibit.c:46
+msgid "COMMAND"
+msgstr "COMANDO"
+
+#: src/cli/tracker-inhibit.c:65
+msgid "Application"
+msgstr "Applicazione"
+
+#: src/cli/tracker-inhibit.c:66
+msgid "Reason"
+msgstr "Motivo"
+
+#: src/cli/tracker-inhibit.c:136
+msgid "Indexing inhibited through command line"
+msgstr "Indicizzazione inibita dalla riga di comando"
+
+#: src/cli/tracker-inhibit.c:160
+msgid "Failed to inhibit indexer"
+msgstr "Non è stato possibile inibire l'indicizzatore"
+
+# %s è il file
+#: src/cli/tracker-process.c:89
+msgid "Could not terminate indexer"
+msgstr "Non è stato possibile terminare l'indicizzatore"
+
+#: src/cli/tracker-process.c:92
+msgid "Indexer process terminated"
+msgstr "Il processo indicizzatore è stato terminato"
+
+#: src/cli/tracker-reset.c:48
+msgid "Remove filesystem indexer database"
+msgstr "Rimuove il database di indicizzazione del file system"
+
+#: src/cli/tracker-reset.c:51
+msgid ""
+"Erase indexed information about a file, works recursively for directories"
+msgstr ""
+"Elimina le informazioni di indicizzazione di un file, con le directory "
+"funziona ricorsivamente"
+
+#. Now, delete the element recursively
+#: src/cli/tracker-reset.c:95
+msgid "Deleting…"
+msgstr "Eliminazione…"
+
+#: src/cli/tracker-reset.c:111
+msgid ""
+"The indexed data for this file has been deleted and will be reindexed again."
+msgstr ""
+"I dati di indicizzazione per questo file sono stati eliminati e verranno "
+"ricreati nuovamente."
+
+#: src/cli/tracker-reset.c:223
+msgid "The LocalSearch indexed data is about to be deleted, proceed? [y/N]"
+msgstr "I dati indicizzati da LocalSearch saranno eliminati. Procedere? [s/N]"
+
+#. TRANSLATORS: this is our test for a [y|N] question in the command line.
+#. * A partial or full match will be considered an affirmative answer,
+#. * it is intentionally lowercase, so please keep it like this.
+#.
+#: src/cli/tracker-reset.c:231
+msgid "yes"
+msgstr "sì"
+
+#: src/cli/tracker-search.c:115
+msgid "Results"
+msgstr "Risultati"
+
+#: src/cli/tracker-search.c:116 src/cli/tracker-search.c:117
+#: src/cli/tracker-search.c:119 src/cli/tracker-search.c:122
+#: src/cli/tracker-search.c:123 src/cli/tracker-search.c:124
+msgid "Files"
+msgstr "File"
+
+#: src/cli/tracker-search.c:118
+msgid "Folders"
+msgstr "Cartelle"
+
+#: src/cli/tracker-search.c:120
+msgid "Albums"
+msgstr "Album"
+
+#: src/cli/tracker-search.c:121
+msgid "Artists"
+msgstr "Artisti"
+
+#: src/cli/tracker-search.c:132
+msgid "Search for files"
+msgstr "Cerca file"
+
+#: src/cli/tracker-search.c:136
+msgid "Search for folders"
+msgstr "Cerca cartelle"
+
+#: src/cli/tracker-search.c:140
+msgid "Search for audio files"
+msgstr "Cerca file video"
+
+#: src/cli/tracker-search.c:144
+msgid "Search for music albums"
+msgstr "Cerca album musicali"
+
+#: src/cli/tracker-search.c:148
+msgid "Search for music artists"
+msgstr "Cerca artisti musicali"
+
+#: src/cli/tracker-search.c:152
+msgid "Search for image files"
+msgstr "Cerca file immagine"
+
+#: src/cli/tracker-search.c:156
+msgid "Search for video files"
+msgstr "Cerca file video"
+
+#: src/cli/tracker-search.c:160
+msgid "Search for document files"
+msgstr "Cerca file documento"
+
+#: src/cli/tracker-search.c:164
+msgid "Search for software files"
+msgstr "Cerca file di software"
+
+#: src/cli/tracker-search.c:173 src/cli/tracker-tag.c:87
+msgid "Limit the number of results shown"
+msgstr "Limita il numero di risultati mostrati"
+
+# FIXME!!!!!
+# oddio, meglio di così mi sa che è difficile
+#: src/cli/tracker-search.c:177 src/cli/tracker-tag.c:91
+msgid "Offset the results"
+msgstr "Applica un offset al risultato"
+
+#: src/cli/tracker-search.c:181
+msgid "Show URNs for results"
+msgstr "Mostra gli URNs per i risultati"
+
+#: src/cli/tracker-search.c:185
+msgid "Return all non-existing matches too (i.e. include unmounted volumes)"
+msgstr ""
+"Restituisce anche tutte le corrispondenze non esistenti (per esempio include "
+"i volumi non montati)"
+
+#: src/cli/tracker-search.c:193
+msgid "Show help options"
+msgstr "Mostra opzioni aiuto"
+
+#: src/cli/tracker-search.c:200 src/cli/tracker-status.c:85
+msgid "search terms"
+msgstr "termini di ricerca"
+
+#: src/cli/tracker-search.c:201
+msgid "TERMS"
+msgstr "TERMINI"
+
+#: src/cli/tracker-status.c:68
+msgid "Follow status changes as they happen"
+msgstr "Segue i cambiamenti di stato appena avvengono"
+
+#: src/cli/tracker-status.c:72
+msgid "Show statistics for current index / data set"
+msgstr "Mostra statistiche sui dati/indice attuali"
+
+#: src/cli/tracker-status.c:76
+msgid ""
+"Watch changes to the database in real time (e.g. resources or files being "
+"added)"
+msgstr ""
+"Controlla le modifiche al database in tempo reale (come le risorse o file "
+"aggiunti)"
+
+#: src/cli/tracker-status.c:86
+msgid "EXPRESSION"
+msgstr "ESPRESSIONE"
+
+#: src/cli/tracker-status.c:172 src/cli/tracker-status.c:295
+#: src/cli/tracker-status.c:317
+msgid "Could not get LocalSearch statistics"
+msgstr "Impossibile ottenere le statistiche di LocalSearch"
+
+#: src/cli/tracker-status.c:434
+#, c-format
+msgid "Currently indexed"
+msgstr "Già indicizzato"
+
+#: src/cli/tracker-status.c:437 src/cli/tracker-tag.c:179
+#, c-format
+msgid "%d file"
+msgid_plural "%d files"
+msgstr[0] "%d file"
+msgstr[1] "%d file"
+
+#: src/cli/tracker-status.c:443
+#, c-format
+msgid "%d folder"
+msgid_plural "%d folders"
+msgstr[0] "%d cartella"
+msgstr[1] "%d cartelle"
+
+#: src/cli/tracker-status.c:457
+msgid "Remaining space on database partition"
+msgstr "Spazio residuo sulla partizione del database"
+
+#: src/cli/tracker-status.c:467 src/cli/tracker-status.c:619
+msgid "Indexer is paused"
+msgstr "L'indicizzatore è in pausa"
+
+#: src/cli/tracker-status.c:468
+msgid "Data is still being indexed"
+msgstr "Indicizzazione dati non completata"
+
+#: src/cli/tracker-status.c:470
+msgid "Indexer is idle"
+msgstr "L'indicizzatore è inattivo"
+
+#: src/cli/tracker-status.c:477
+#, c-format
+msgid "%d recorded failure"
+msgid_plural "%d recorded failures"
+msgstr[0] "%d errore registrato"
+msgstr[1] "%d errori registrati"
+
+#: src/cli/tracker-status.c:507
+msgid "No reports found"
+msgstr "Nessun resoconto trovato"
+
+#: src/cli/tracker-status.c:684
+msgid "Could not get SPARQL connection"
+msgstr "Impossibile ottenere una connessione SPARQL"
+
+#: src/cli/tracker-status.c:693
+msgid "Now listening to database updates"
+msgstr "In ascolto per aggiornamenti del database"
+
+#: src/cli/tracker-status.c:694
+msgid "Press Ctrl+C to stop"
+msgstr "Premere Ctrl+C per terminare"
+
+#: src/cli/tracker-tag.c:67
+msgid "List all tags"
+msgstr "Elenca tutte le etichette"
+
+#: src/cli/tracker-tag.c:71
+msgid "Show files associated with each tag (this is only used with --list)"
+msgstr "Mostra i file associati con ciascuna etichetta (usata solo con --list)"
+
+#: src/cli/tracker-tag.c:75
+msgid "Add a tag (if FILEs are omitted, TAG is not associated with any files)"
+msgstr ""
+"Aggiunge un'etichetta (se FILE è omesso, ETICHETTA non viene associata ad "
+"alcun file)"
+
+#: src/cli/tracker-tag.c:76 src/cli/tracker-tag.c:80
+msgid "TAG"
+msgstr "ETICHETTA"
+
+#: src/cli/tracker-tag.c:79
+msgid "Delete a tag (if FILEs are omitted, TAG is removed for all files)"
+msgstr ""
+"Elimina una etichetta (se FILE è omesso, ETICHETTA è rimossa da tutti i file)"
+
+#: src/cli/tracker-tag.c:83
+msgid "Description for a tag (this is only used with --add)"
+msgstr "Descrizione per un'etichetta (usata solo con --add)"
+
+#: src/cli/tracker-tag.c:84
+msgid "STRING"
+msgstr "STRINGA"
+
+#: src/cli/tracker-tag.c:96
+msgid "FILE…"
+msgstr "FILE…"
+
+# come sopra
+#: src/cli/tracker-tag.c:119
+msgid "Could not get files related to tag"
+msgstr "Impossibile ottenere i file correlati all'etichetta"
+
+#: src/cli/tracker-tag.c:150 src/cli/tracker-tag.c:334
+msgid "Could not get all tags"
+msgstr "Impossibile ottenere tutte le etichette"
+
+#: src/cli/tracker-tag.c:155
+msgid "Tags (shown by name)"
+msgstr "Etichette (mostrate per nome)"
+
+#: src/cli/tracker-tag.c:216
+msgid "Could not add tag"
+msgstr "Impossibile aggiungere l'etichetta"
+
+#: src/cli/tracker-tag.c:221
+msgid "Tag was added successfully"
+msgstr "Aggiunta dell'etichetta riuscita"
+
+# %s è il file
+#: src/cli/tracker-tag.c:247
+msgid "Could not add tag to files"
+msgstr "Impossibile aggiungere l'etichetta ai file"
+
+#: src/cli/tracker-tag.c:252
+msgid "Tagged"
+msgstr "Etichettato"
+
+# %s è il file
+#: src/cli/tracker-tag.c:277 src/cli/tracker-tag.c:305
+msgid "Could not remove tag"
+msgstr "Impossibile rimuovere l'etichetta"
+
+#: src/cli/tracker-tag.c:282 src/cli/tracker-tag.c:310
+msgid "Tag was removed successfully"
+msgstr "Rimozione dell'etichetta riuscita"
+
+#: src/cli/tracker-tag.c:357
+msgid "Could not establish a connection to LocalSearch"
+msgstr "Impossibile stabilire una connessione con LocalSearch"
+
+#: src/cli/tracker-tag.c:421
+msgid "The --list option is required for --show-files"
+msgstr "È richiesa l'opzione --list per --show-files"
+
+#: src/cli/tracker-tag.c:423
+msgid "Add and delete actions can not be used together"
+msgstr "Le azioni «aggiungi» ed «elimina» non possono essere usate assieme"
+
+#: src/cli/tracker-tag.c:425
+msgid "The --description option can only be used with --add"
+msgstr "L'opzione --description può essere usata solo con --add"
+
+#: src/common/tracker-utils.c:101 src/common/tracker-utils.c:152
+msgid "less than one second"
+msgstr "meno di un secondo"
+
+#. Translators: this is %d days
+#: src/common/tracker-utils.c:116
+#, c-format
+msgid " %dd"
+msgstr " %dd"
+
+#. Translators: this is %2.2d hours
+#: src/common/tracker-utils.c:120
+#, c-format
+msgid " %2.2dh"
+msgstr " %2.2dh"
+
+#. Translators: this is %2.2d minutes
+#: src/common/tracker-utils.c:124
+#, c-format
+msgid " %2.2dm"
+msgstr " %2.2dm"
+
+#. Translators: this is %2.2d seconds
+#: src/common/tracker-utils.c:128
+#, c-format
+msgid " %2.2ds"
+msgstr " %2.2ds"
+
+#: src/common/tracker-utils.c:132
+#, c-format
+msgid " %d day"
+msgid_plural " %d days"
+msgstr[0] " %d giorno"
+msgstr[1] " %d giorni"
+
+#: src/common/tracker-utils.c:136
+#, c-format
+msgid " %2.2d hour"
+msgid_plural " %2.2d hours"
+msgstr[0] " %2.2d ora"
+msgstr[1] " %2.2d ore"
+
+#: src/common/tracker-utils.c:140
+#, c-format
+msgid " %2.2d minute"
+msgid_plural " %2.2d minutes"
+msgstr[0] " %2.2d minuto"
+msgstr[1] " %2.2d minuti"
+
+#: src/common/tracker-utils.c:144
+#, c-format
+msgid " %2.2d second"
+msgid_plural " %2.2d seconds"
+msgstr[0] " %2.2d secondo"
+msgstr[1] " %2.2d secondi"
+
+#: src/control/tracker-main.c:61 src/extractor/tracker-main.c:94
+#: src/indexer/tracker-application.c:69 src/writeback/tracker-main.c:50
+msgid "Displays version information"
+msgstr "Mostra informazioni sulla versione"
+
+#. Translators: this messagge will apper immediately after the
+#. * usage string - Usage: COMMAND <THIS_MESSAGE>
+#.
+#: src/control/tracker-main.c:136 src/indexer/tracker-endpoint-helper.c:77
+msgid "— start the tracker index proxy"
+msgstr "— Avvia il proxy di indicizzazione Tracker"
+
+#: src/extractor/tracker-main.c:75
+msgid "File to extract metadata for"
+msgstr "File da cui estrarre i metadati"
+
+# desunto è troppo aulico per l'italiano medio?
+# congetturato? supposto? indovinato?
+#: src/extractor/tracker-main.c:79
+msgid "MIME type for file (if not provided, this will be guessed)"
+msgstr "Tipo MIME del file (se non fornito viene desunto)"
+
+#: src/extractor/tracker-main.c:80
+msgid "MIME"
+msgstr "MIME"
+
+#: src/extractor/tracker-main.c:86 src/indexer/tracker-endpoint-helper.c:40
+msgid "Socket file descriptor for peer-to-peer communication"
+msgstr "Descrittore file socket per comunicazione peer-to-peer"
+
+#: src/extractor/tracker-main.c:87 src/indexer/tracker-endpoint-helper.c:41
+msgid "FD"
+msgstr "FD"
+
+#: src/extractor/tracker-main.c:90
+msgid "Filesystem root of the extracted data"
+msgstr "Radice del file system dei dati estratti"
+
+#: src/extractor/tracker-main.c:262
+msgid "No metadata or extractor modules found to handle this file"
+msgstr ""
+"Non è stato trovato alcun modulo per metadati o di estrazione per gestire "
+"questo file"
+
+#: src/extractor/tracker-main.c:270
+msgid "Metadata extraction failed"
+msgstr "Estrazione dei metadati non riuscita"
+
+#. Translators: this message will appear immediately after the
+#. usage string - Usage: COMMAND [OPTION]... <THIS_MESSAGE>
+#: src/extractor/tracker-main.c:333
+msgid "— Extract file meta data"
+msgstr "— Estrae i metadati dei file"
+
+#: src/extractor/tracker-main.c:347
+msgid "Filename and mime type must be provided together"
+msgstr "Il nome file e il tipo MIME devono essere forniti assieme"
+
+#: src/indexer/tracker-application.c:57
+msgid "Runs until all configured locations are indexed and then exits"
+msgstr ""
+"Resta in esecuzione finché tutte le posizioni configurate non sono "
+"indicizzate, poi esce"
+
+#: src/indexer/tracker-application.c:61
+msgid "Checks if FILE is eligible for being mined based on configuration"
+msgstr ""
+"Verifica che sia possibile estrarre dati da FILE in base alla configurazione"
+
+#: src/indexer/tracker-application.c:65
+msgid "Avoids changes in the filesystem"
+msgstr "Evita modifiche al file system"
+
+#: src/indexer/tracker-application.c:1268
+#, c-format
+msgid "Data object “%s” currently exists"
+msgstr "L'oggetto dati «%s» esiste già"
+
+#: src/indexer/tracker-application.c:1269
+#, c-format
+msgid "Data object “%s” currently does not exist"
+msgstr "L'oggetto dati «%s» non esiste"
+
+#: src/indexer/tracker-application.c:1295
+#, c-format
+msgid "Parent directory “%s” is NOT eligible to be indexed (based on filters)"
+msgstr ""
+"Non è possibile indicizzare la directory superiore «%s» (in base ai filtri)"
+
+#: src/indexer/tracker-application.c:1301
+#, c-format
+msgid "Parent directory “%s” is NOT eligible to be indexed (hidden file)"
+msgstr ""
+"Non è possibile indicizzare la directory superiore «%s» (file nascosto)"
+
+#: src/indexer/tracker-application.c:1307
+#, c-format
+msgid ""
+"Parent directory “%s” is NOT eligible to be indexed (based on content "
+"filters)"
+msgstr ""
+"Non è possibile indicizzare la directory superiore «%s» (in base ai filtri "
+"sui contenuti)"
+
+#: src/indexer/tracker-application.c:1322
+msgid "Directory is NOT eligible to be indexed (based on filters)"
+msgstr "Non è possibile indicizzare la directory (in base ai filtri)"
+
+#: src/indexer/tracker-application.c:1326
+msgid "File is NOT eligible to be indexed (based on filters)"
+msgstr "Non è possibile indicizzare il file (in base ai filtri)"
+
+#: src/indexer/tracker-application.c:1329
+msgid "File is NOT eligible to be indexed (hidden file)"
+msgstr "Non è possibile indicizzare il file (file nascosto)"
+
+#: src/indexer/tracker-application.c:1331
+msgid "File is NOT eligible to be indexed (not an indexed folder)"
+msgstr "Non è possibile indicizzare il file (cartella non indicizzata)"
+
+#: src/indexer/tracker-application.c:1339
+msgid "Directory is eligible to be indexed"
+msgstr "È possibile indicizzare la directory"
+
+#: src/indexer/tracker-application.c:1340
+msgid "File is eligible to be indexed"
+msgstr "È possibile analizzare il file"
+
+#: src/indexer/tracker-endpoint-helper.c:36
+msgid "Database location"
+msgstr "Posizione del database"
+
+#: src/indexer/tracker-endpoint-helper.c:37
+msgid "DIR"
+msgstr "DIR"
+
+# cambiata la punteggiatura
+#: src/writeback/tracker-main.c:54
+msgid ""
+"Logging, 0 = errors only, 1 = minimal, 2 = detailed and 3 = debug (default=0)"
+msgstr ""
+"Logging: 0 = solo errori, 1 = minimo, 2 = dettagliato, 3 = debug "
+"(predefinito=0)"
+
+#: src/writeback/tracker-main.c:61
+msgid "Disable shutting down after 30 seconds of inactivity"
+msgstr "Disabilita l'arresto dopo 30 secondi di inattività"
+
+#. Translators: this message will appear immediately after the
+#. * usage string - Usage: COMMAND <THIS_MESSAGE>
+#.
+#: src/writeback/tracker-main.c:93
+msgid "— start the tracker writeback service"
+msgstr "— avvia il servizio writeback del tracker"

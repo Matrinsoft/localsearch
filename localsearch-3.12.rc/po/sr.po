@@ -1,0 +1,928 @@
+# Serbian translation for tracker.
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2011—2025.
+# This file is distributed under the same license as the tracker package.
+# Милош Поповић <gpopac@gmail.com>, 2011—2015.
+# Марко М. Костић <marko.m.kostic@gmail.com>, 2020."
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2012-2025.
+# aceydot <aceydot@tuta.io>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tracker master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/localsearch/-/issues\n"
+"POT-Creation-Date: 2026-02-25 08:49+0000\n"
+"PO-Revision-Date: 2025-10-21 22:31+0200\n"
+"Last-Translator: aceydot <aceydot@tuta.io>\n"
+"Language-Team: Serbian <српски <gnome-sr@googlegroups.org>>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Project-Style: gnome\n"
+"X-Generator: Poedit 3.6\n"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:23
+msgid "Max bytes to extract"
+msgstr "Највећи број бајтова за извлачење"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:24
+msgid "Maximum number of UTF-8 bytes to extract."
+msgstr "Највећи број УТФ-8 бајтова за извлачење."
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:30
+msgid "Text file allowlist"
+msgstr "Списак дозвољених датотека текста"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:31
+msgid "Filename patterns for plain text documents that should be indexed"
+msgstr ""
+"Шаблони назива датотека за документа обичног текста која ће бити индексирана"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:37
+msgid "Wait for FS miner to be done before extracting"
+msgstr "Чека на копача СД-а да заврши пре извлачења"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:38
+msgid ""
+"When true, tracker-extract will wait for tracker-miner-fs to be done "
+"crawling before extracting meta-data. This option is useful on constrained "
+"environment where it is important to list files as fast as possible and can "
+"wait to get meta-data later."
+msgstr ""
+"Када је изабрано, „трагач-извуци“ ће сачекати да „трагачев-копач-сд“ заврши "
+"са индексирање пре извлачења метаподатака. Ова опција је корисна на "
+"ограниченим окружењима где је важно исписати датотеке што је брже могуће и "
+"где може сачекати на добављање метаподатака."
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:24
+msgid "Enable stemmer"
+msgstr "Укључи скраћивање на основу"
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:25
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:31
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:37
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:24
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:31
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:38
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:45
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:52
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:71
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:77
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:83
+msgid "This setting is deprecated"
+msgstr "Ово подешавање је застарело"
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:30
+msgid "Enable unaccent"
+msgstr "Укључује ненаглашавање"
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:36
+msgid "Ignore numbers"
+msgstr "Занемарује бројеве"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:23
+msgid "Initial sleep"
+msgstr "Почетно спавање"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:30
+msgid "Throttle"
+msgstr "Одмеравач"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:37
+msgid "Low disk space limit"
+msgstr "Ограничење недостатка простора на диску"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:44
+msgid "Crawling interval"
+msgstr "Период пописивања"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:51
+msgid "Removable devices’ data permanence threshold"
+msgstr "Праг постојаности података уклоњивих уређаја"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:58
+msgid "Enable monitors"
+msgstr "Укључује надгледање"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:59
+msgid "Set to false to completely disable any file monitoring"
+msgstr "Поништите избор да у потпуности искључите надгледање датотека"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:64
+msgid "Index removable devices"
+msgstr "Индексира уклоњиве уређаје"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:65
+msgid ""
+"Set to true to enable indexing mounted directories for removable devices."
+msgstr ""
+"Поставите на „true“ (тачно) да индексирате прикачене директоријуме уклоњивих "
+"уређаја."
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:70
+msgid "Index optical discs"
+msgstr "Индексира оптичке дискове"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:76
+msgid "Index when running on battery"
+msgstr "Индексирај и када ради на батерији"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:82
+msgid "Perform initial indexing when running on battery"
+msgstr "Извршава почетно индексирање при раду на батерији"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:88
+msgid "Directories to index recursively"
+msgstr "Директоријуми за дубинско индексирање"
+
+#. Translators: Do NOT translate the directories names in capital. Those
+#. are keys used by Tracker.
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:91
+msgid ""
+"List of directories to index recursively, Special values include: "
+"‘&DESKTOP’, ‘&DOCUMENTS’, ‘&DOWNLOAD’, ‘&MUSIC’, ‘&PICTURES’, "
+"‘&PUBLIC_SHARE’, ‘&TEMPLATES’, ‘&VIDEOS’. See /etc/xdg/user-dirs.defaults "
+"and $HOME/.config/user-dirs.default"
+msgstr ""
+"Списак директоријума који ће бити индексирани дубински. У посебне вредности "
+"спадају: „&РАДНА_ПОВРШ“, „&ДОКУМЕНТИ“, „&ПРЕУЗИМАЊА“, „&МУЗИКА“, „&СЛИКЕ“, "
+"„&ЈАВНО_ДЕЉЕЊЕ“, „&ШАБЛОНИ“, „&ВИДЕО“. Погледајте „/etc/xdg/user-"
+"dirs.defaults“ и „$HOME/.config/user-dirs.default“"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:102
+msgid "Directories to index non-recursively"
+msgstr "Директоријуми за не-дубинско индексирање"
+
+#. Translators: Do NOT translate the directories names in capital. Those
+#. are keys used by Tracker.
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:105
+msgid ""
+"List of directories to index without inspecting subfolders, Special values "
+"include: ‘&DESKTOP’, ‘&DOCUMENTS’, ‘&DOWNLOAD’, ‘&MUSIC’, ‘&PICTURES’, "
+"‘&PUBLIC_SHARE’, ‘&TEMPLATES’, ‘&VIDEOS’. See /etc/xdg/user-dirs.defaults "
+"and $HOME/.config/user-dirs.default"
+msgstr ""
+"Списак директоријума који ће бити индексирани без прегледања подфасцикли. У "
+"посебне вредности спадају: „&РАДНА_ПОВРШ“, „&ДОКУМЕНТИ“, „&ПРЕУЗИМАЊА“, "
+"„&МУЗИКА“, „&СЛИКЕ“, „&ЈАВНО_ДЕЉЕЊЕ“, „&ШАБЛОНИ“, „&ВИДЕО“. Погледајте „/etc/"
+"xdg/user-dirs.defaults“ и „$HOME/.config/user-dirs.default“"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:116
+msgid "Ignored files"
+msgstr "Занемарене датотеке"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:117
+msgid "List of file patterns to avoid"
+msgstr "Списак образаца датотека за избегавање"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:122
+msgid "Ignored directories"
+msgstr "Занемарени директоријуми"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:123
+msgid "List of directories to avoid"
+msgstr "Списак директоријума за избегавање"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:128
+msgid "Ignored directories with content"
+msgstr "Занемарени директоријуми са садржајем"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:129
+msgid "Avoid any directory containing a file blocklisted here"
+msgstr ""
+"Избегава сваки директоријум који овде садржи датотеку блокирану на списку"
+
+#: src/cli/main.c:68
+msgid "Show help on subcommands"
+msgstr "Прикажи помоћ за поднаредбе"
+
+#: src/cli/main.c:69
+msgid "Show metadata extractor output"
+msgstr "Прикажи извучене метаподатке на излазу"
+
+#: src/cli/main.c:70 src/cli/tracker-index.c:382
+msgid "List and change indexed folders"
+msgstr "Испиши и промени индексиране фасцикле"
+
+#: src/cli/main.c:71 src/cli/tracker-info.c:533
+msgid "Retrieve information available for files and resources"
+msgstr "Добавља све доступне податке за датотеке и ресурсе"
+
+#: src/cli/main.c:72 src/cli/tracker-inhibit.c:98
+msgid "Inhibit indexing temporarily"
+msgstr "Привремено онемогући индексирање"
+
+#: src/cli/main.c:73 src/cli/tracker-reset.c:202
+msgid "Erase the indexed data"
+msgstr "Обриши индексиране податке"
+
+#: src/cli/main.c:74 src/cli/tracker-search.c:418
+msgid "Search for content"
+msgstr "Тражи садржај"
+
+#: src/cli/main.c:75 src/cli/tracker-status.c:727
+msgid "Provide status and statistics on the data indexed"
+msgstr "Приказује стање и статистику о индексираним подацима"
+
+#: src/cli/main.c:76 src/cli/tracker-tag.c:414
+msgid "Add, remove and list tags"
+msgstr "Додајте, уклањајте или исписујте ознаке"
+
+#: src/cli/main.c:77
+msgid "Sandbox for a testing environment"
+msgstr "Безбедна кутија за тест окружење"
+
+#: src/cli/main.c:122
+msgid "Available localsearch commands are:"
+msgstr "Доступне наредбе трагача су:"
+
+#: src/cli/main.c:141
+msgid "See “localsearch help <command>” to read about a specific subcommand."
+msgstr "Видите „localsearch help <наредба>“ да прочитате о некој поднаредби."
+
+#: src/cli/main.c:184
+#, c-format
+msgid "“%s” is not a localsearch command. See “localsearch --help”"
+msgstr "„%s“ није трагачева наредба. Видите „localsearch --help“"
+
+#: src/cli/tracker-cli-utils.c:179 src/cli/tracker-status.c:376
+msgid "Message"
+msgstr "Порука"
+
+#: src/cli/tracker-extract.c:44 src/cli/tracker-info.c:75
+#: src/extractor/tracker-main.c:82
+msgid "Output results format: “turtle”, “trig” or “json-ld”"
+msgstr "Формат излазних резултата: „turtle“, „trig“ или „json-ld“"
+
+#: src/cli/tracker-extract.c:45 src/cli/tracker-info.c:76
+#: src/extractor/tracker-main.c:83
+msgid "FORMAT"
+msgstr "ФОРМАТ"
+
+#: src/cli/tracker-extract.c:47 src/cli/tracker-extract.c:48
+#: src/cli/tracker-index.c:60 src/cli/tracker-index.c:61
+#: src/cli/tracker-info.c:84 src/cli/tracker-info.c:85
+#: src/cli/tracker-reset.c:52 src/extractor/tracker-main.c:76
+#: src/extractor/tracker-main.c:91 src/indexer/tracker-application.c:62
+msgid "FILE"
+msgstr "ДАТОТЕКА"
+
+#: src/cli/tracker-extract.c:94
+msgid "Could not run tracker-extract: "
+msgstr "Не могу да покренем трагачево распакивање: "
+
+#: src/cli/tracker-extract.c:131
+msgid "Extract metadata from a file"
+msgstr "Извуците метаподатке из датотекe"
+
+#: src/cli/tracker-extract.c:138 src/cli/tracker-index.c:387
+#: src/cli/tracker-info.c:540 src/cli/tracker-inhibit.c:113
+#: src/cli/tracker-reset.c:207 src/cli/tracker-search.c:431
+#: src/cli/tracker-status.c:732 src/cli/tracker-tag.c:419
+msgid "Unrecognized options"
+msgstr "Непознате опције"
+
+#: src/cli/tracker-index.c:51
+msgid "Adds FILE as an indexed location"
+msgstr "Додаје ДАТОТЕКУ као индексирану локацију"
+
+#: src/cli/tracker-index.c:54
+msgid "Removes FILE from indexed locations"
+msgstr "Уклања ДАТОТЕКУ из индексираних локација"
+
+#: src/cli/tracker-index.c:57
+msgid "Makes indexing recursive"
+msgstr "Чини индексирање дубинским"
+
+#: src/cli/tracker-index.c:205
+#, c-format
+msgid "“%s” is not a directory"
+msgstr "„%s“ није директоријум"
+
+#. TRANSLATORS: These are commandline options
+#: src/cli/tracker-index.c:281
+msgid "Either --add or --remove must be provided"
+msgstr "Или „--add“ или „--remove“ мора бити достављено"
+
+#. TRANSLATORS: These are commandline options
+#: src/cli/tracker-index.c:285
+msgid "--add and --remove are mutually exclusive"
+msgstr "„--add“ и „--remove“ се узајамно искључују"
+
+#. TRANSLATORS: These are commandline options
+#: src/cli/tracker-index.c:295
+msgid "--recursive requires --add"
+msgstr "„--recursive“ захтева „--add“"
+
+#: src/cli/tracker-index.c:353 src/cli/tracker-status.c:375
+msgid "Path"
+msgstr "Путања"
+
+#: src/cli/tracker-index.c:354
+msgid "Recursive"
+msgstr "Дубински"
+
+#: src/cli/tracker-index.c:396
+msgid "Please specify one or more locations to index."
+msgstr "Наведите једну или више локација за индексирање."
+
+#: src/cli/tracker-info.c:67
+msgid "Show full namespaces (i.e. don’t use nie:title, use full URLs)"
+msgstr ""
+"Приказује читаве називне просторе (тј. не користи „nie:title“, користи пуне "
+"адресе)"
+
+#: src/cli/tracker-info.c:71
+msgid "Show plain text content if available for resources"
+msgstr "Приказује садржај обичног текста ако је доступан за ресурсе"
+
+#: src/cli/tracker-info.c:78
+msgid "Checks if FILE is eligible for being indexed"
+msgstr "Проверава да ли се ДАТОТЕКА може индексирати"
+
+#: src/cli/tracker-info.c:81 src/cli/tracker-search.c:189
+#: src/cli/tracker-status.c:80
+msgid "Removable device mount point to query"
+msgstr "Тачка качења уклоњивог уређаја за упит"
+
+#: src/cli/tracker-info.c:357 src/cli/tracker-search.c:373
+#: src/cli/tracker-status.c:158 src/cli/tracker-status.c:276
+msgid "Could not connect to LocalSearch"
+msgstr "Не могу да успоставим везу са локалном претрагом"
+
+#: src/cli/tracker-info.c:405
+msgid "Unable to retrieve data for URI"
+msgstr "Не могу да довучем податке за путању"
+
+#: src/cli/tracker-info.c:412
+msgid "No metadata available for that URI"
+msgstr "Нема доступних метаподатака за ту путању"
+
+#: src/cli/tracker-info.c:422 src/cli/tracker-info.c:499
+msgid "Could not get eligible status: "
+msgstr "Не могу да добавим стање избирљивог: "
+
+#: src/cli/tracker-info.c:451 src/extractor/tracker-main.c:189
+#, c-format
+msgid "Unsupported serialization format “%s”\n"
+msgstr "Неподржан формат серијализације „%s“\n"
+
+#: src/cli/tracker-inhibit.c:39
+msgid "List inhibitions"
+msgstr "Испиши шта онемогућава индексирање"
+
+#: src/cli/tracker-inhibit.c:45
+msgid "command"
+msgstr "наредба"
+
+#: src/cli/tracker-inhibit.c:46
+msgid "COMMAND"
+msgstr "НАРЕДБА"
+
+#: src/cli/tracker-inhibit.c:65
+msgid "Application"
+msgstr "Програм"
+
+#: src/cli/tracker-inhibit.c:66
+msgid "Reason"
+msgstr "Разлог"
+
+#: src/cli/tracker-inhibit.c:136
+msgid "Indexing inhibited through command line"
+msgstr "Индексирање је онемогућено путем командне линије"
+
+#: src/cli/tracker-inhibit.c:160
+msgid "Failed to inhibit indexer"
+msgstr "Не могу да онемогућим индексирање"
+
+#: src/cli/tracker-process.c:89
+msgid "Could not terminate indexer"
+msgstr "Не могу да прекинем индексирање"
+
+#: src/cli/tracker-process.c:92
+msgid "Indexer process terminated"
+msgstr "Процес индексирања прекинут"
+
+#: src/cli/tracker-reset.c:48
+msgid "Remove filesystem indexer database"
+msgstr "Уклања базу података са индексима система датотека"
+
+#: src/cli/tracker-reset.c:51
+msgid ""
+"Erase indexed information about a file, works recursively for directories"
+msgstr ""
+"Брише индексиране информације о датотеци, ради дубински за директоријуме"
+
+#. Now, delete the element recursively
+#: src/cli/tracker-reset.c:95
+msgid "Deleting…"
+msgstr "Бришем…"
+
+#: src/cli/tracker-reset.c:111
+msgid ""
+"The indexed data for this file has been deleted and will be reindexed again."
+msgstr ""
+"Индексирани подаци за ову датотеку су обрисани и биће поново индексирани."
+
+#: src/cli/tracker-reset.c:223
+msgid "The LocalSearch indexed data is about to be deleted, proceed? [y/N]"
+msgstr ""
+"Индексирани подаци локалне претраге ће бити избрисани, настави? [y (да)/N "
+"(не)]"
+
+#. TRANSLATORS: this is our test for a [y|N] question in the command line.
+#. * A partial or full match will be considered an affirmative answer,
+#. * it is intentionally lowercase, so please keep it like this.
+#.
+#: src/cli/tracker-reset.c:231
+msgid "yes"
+msgstr "да"
+
+#: src/cli/tracker-search.c:115
+msgid "Results"
+msgstr "Резултати"
+
+#: src/cli/tracker-search.c:116 src/cli/tracker-search.c:117
+#: src/cli/tracker-search.c:119 src/cli/tracker-search.c:122
+#: src/cli/tracker-search.c:123 src/cli/tracker-search.c:124
+msgid "Files"
+msgstr "Датотеке"
+
+#: src/cli/tracker-search.c:118
+msgid "Folders"
+msgstr "Фасцикле"
+
+#: src/cli/tracker-search.c:120
+msgid "Albums"
+msgstr "Албуми"
+
+#: src/cli/tracker-search.c:121
+msgid "Artists"
+msgstr "Извођачи"
+
+#: src/cli/tracker-search.c:132
+msgid "Search for files"
+msgstr "Тражи датотеке"
+
+#: src/cli/tracker-search.c:136
+msgid "Search for folders"
+msgstr "Тражи фасцикле"
+
+#: src/cli/tracker-search.c:140
+msgid "Search for audio files"
+msgstr "Тражи датотеке са звуком"
+
+#: src/cli/tracker-search.c:144
+msgid "Search for music albums"
+msgstr "Тражи музичке албуме"
+
+#: src/cli/tracker-search.c:148
+msgid "Search for music artists"
+msgstr "Тражи музичке извођаче"
+
+#: src/cli/tracker-search.c:152
+msgid "Search for image files"
+msgstr "Тражи датотеке са сликама"
+
+#: src/cli/tracker-search.c:156
+msgid "Search for video files"
+msgstr "Тражи видео датотеке"
+
+#: src/cli/tracker-search.c:160
+msgid "Search for document files"
+msgstr "Тражи датотеке докумената"
+
+#: src/cli/tracker-search.c:164
+msgid "Search for software files"
+msgstr "Тражи датотеке програма"
+
+#: src/cli/tracker-search.c:173 src/cli/tracker-tag.c:87
+msgid "Limit the number of results shown"
+msgstr "Ограничи број приказаних резултата"
+
+#: src/cli/tracker-search.c:177 src/cli/tracker-tag.c:91
+msgid "Offset the results"
+msgstr "Одступање резултата"
+
+#: src/cli/tracker-search.c:181
+msgid "Show URNs for results"
+msgstr "Прикажи УРН-ове за резултате"
+
+#: src/cli/tracker-search.c:185
+msgid "Return all non-existing matches too (i.e. include unmounted volumes)"
+msgstr ""
+"Исписује такође и сва непостојећа поклапања (нпр. укључује неприкачене "
+"волумене)"
+
+#: src/cli/tracker-search.c:193
+msgid "Show help options"
+msgstr "Прикажи опције помоћи"
+
+#: src/cli/tracker-search.c:200 src/cli/tracker-status.c:85
+msgid "search terms"
+msgstr "израз претраге"
+
+#: src/cli/tracker-search.c:201
+msgid "TERMS"
+msgstr "УСЛОВИ"
+
+#: src/cli/tracker-status.c:68
+msgid "Follow status changes as they happen"
+msgstr "Прати промене стања када до њих дође"
+
+#: src/cli/tracker-status.c:72
+msgid "Show statistics for current index / data set"
+msgstr "Приказује статистику за текући индекс / скуп података"
+
+#: src/cli/tracker-status.c:76
+msgid ""
+"Watch changes to the database in real time (e.g. resources or files being "
+"added)"
+msgstr ""
+"Надгледа измене у бази података у стварном времену (нпр. додатта изворишта и "
+"датотеке)"
+
+#: src/cli/tracker-status.c:86
+msgid "EXPRESSION"
+msgstr "ИЗРАЗ"
+
+#: src/cli/tracker-status.c:172 src/cli/tracker-status.c:295
+#: src/cli/tracker-status.c:317
+msgid "Could not get LocalSearch statistics"
+msgstr "Не могу да добавим статистику локалне претраге"
+
+#: src/cli/tracker-status.c:434
+#, c-format
+msgid "Currently indexed"
+msgstr "Тренутно индексирано"
+
+#: src/cli/tracker-status.c:437 src/cli/tracker-tag.c:180
+#, c-format
+msgid "%d file"
+msgid_plural "%d files"
+msgstr[0] "%d датотека"
+msgstr[1] "%d датотеке"
+msgstr[2] "%d датотека"
+msgstr[3] "Једна датотека"
+
+#: src/cli/tracker-status.c:443
+#, c-format
+msgid "%d folder"
+msgid_plural "%d folders"
+msgstr[0] "%d фасцикла"
+msgstr[1] "%d фасцикле"
+msgstr[2] "%d фасцикли"
+msgstr[3] "Једна фасцикла"
+
+#: src/cli/tracker-status.c:457
+msgid "Remaining space on database partition"
+msgstr "Преостали простор на партицији базе података"
+
+#: src/cli/tracker-status.c:467 src/cli/tracker-status.c:619
+msgid "Indexer is paused"
+msgstr "Индексирање је паузирано"
+
+#: src/cli/tracker-status.c:468
+msgid "Data is still being indexed"
+msgstr "Подаци се још увек индексирају"
+
+#: src/cli/tracker-status.c:470
+msgid "Indexer is idle"
+msgstr "Израда индекса је неактивна"
+
+#: src/cli/tracker-status.c:477
+#, c-format
+msgid "%d recorded failure"
+msgid_plural "%d recorded failures"
+msgstr[0] "%d забележени неуспех"
+msgstr[1] "%d забележена неуспеха"
+msgstr[2] "%d забележених неуспеха"
+msgstr[3] "Један забележени неуспех"
+
+#: src/cli/tracker-status.c:507
+msgid "No reports found"
+msgstr "Нисам пронашао извештаје"
+
+#: src/cli/tracker-status.c:684
+msgid "Could not get SPARQL connection"
+msgstr "Не могу да добавим СПАРКуЛ везу"
+
+#: src/cli/tracker-status.c:693
+msgid "Now listening to database updates"
+msgstr "Сада ослушкујем за освежењима у бази података"
+
+#: src/cli/tracker-status.c:694
+msgid "Press Ctrl+C to stop"
+msgstr "Притисните „Ctrl+C“ да зауставите"
+
+#: src/cli/tracker-tag.c:67
+msgid "List all tags"
+msgstr "Испиши све ознаке"
+
+#: src/cli/tracker-tag.c:71
+msgid "Show files associated with each tag (this is only used with --list)"
+msgstr ""
+"Приказује датотеке придружене свакој ознаци (ово се користи само уз „--list“)"
+
+#: src/cli/tracker-tag.c:75
+msgid "Add a tag (if FILEs are omitted, TAG is not associated with any files)"
+msgstr ""
+"Додаје ознаку (ако су ДАТОТЕКЕ изостављене, ОЗНАКА није придружена ниједној "
+"датотеци)"
+
+#: src/cli/tracker-tag.c:76 src/cli/tracker-tag.c:80
+msgid "TAG"
+msgstr "ОЗНАКА"
+
+#: src/cli/tracker-tag.c:79
+msgid "Delete a tag (if FILEs are omitted, TAG is removed for all files)"
+msgstr ""
+"Брише ознаку (ако су ДАТОТЕКЕ изостављене, ОЗНАКА се уклања за све датотеке)"
+
+#: src/cli/tracker-tag.c:83
+msgid "Description for a tag (this is only used with --add)"
+msgstr "Опис за ознаку (ово се користи само уз „--add“)"
+
+#: src/cli/tracker-tag.c:84
+msgid "STRING"
+msgstr "НИСКА"
+
+#: src/cli/tracker-tag.c:96
+msgid "FILE…"
+msgstr "ДАТОТЕКА…"
+
+#: src/cli/tracker-tag.c:119
+msgid "Could not get files related to tag"
+msgstr "Не могу да добавим датотеке које се односе на ознаку"
+
+#: src/cli/tracker-tag.c:151 src/cli/tracker-tag.c:335
+msgid "Could not get all tags"
+msgstr "Не могу да добавим све ознаке"
+
+#: src/cli/tracker-tag.c:156
+msgid "Tags (shown by name)"
+msgstr "Ознаке (приказане према називу)"
+
+#: src/cli/tracker-tag.c:217
+msgid "Could not add tag"
+msgstr "Не могу да додам ознаку"
+
+#: src/cli/tracker-tag.c:222
+msgid "Tag was added successfully"
+msgstr "Ознака је успешно додата"
+
+#: src/cli/tracker-tag.c:248
+msgid "Could not add tag to files"
+msgstr "Не могу да додам ознаку на датотеку"
+
+#: src/cli/tracker-tag.c:253
+msgid "Tagged"
+msgstr "Означено"
+
+#: src/cli/tracker-tag.c:278 src/cli/tracker-tag.c:306
+msgid "Could not remove tag"
+msgstr "Не могу да уклоним ознаку"
+
+#: src/cli/tracker-tag.c:283 src/cli/tracker-tag.c:311
+msgid "Tag was removed successfully"
+msgstr "Ознака је успешно уклоњена"
+
+#: src/cli/tracker-tag.c:360
+msgid "Could not establish a connection to LocalSearch"
+msgstr "Не могу да успоставим везу са локалном претрагом"
+
+#: src/cli/tracker-tag.c:424
+msgid "The --list option is required for --show-files"
+msgstr "Опција „--list“ је потребна за „--show-files“"
+
+#: src/cli/tracker-tag.c:426
+msgid "Add and delete actions can not be used together"
+msgstr "Радње додавања и брисања не могу бити коришћене заједно"
+
+#: src/cli/tracker-tag.c:428
+msgid "The --description option can only be used with --add"
+msgstr "Опција „--description“ може бити коришћена само уз „--add“"
+
+#: src/common/tracker-utils.c:101 src/common/tracker-utils.c:152
+msgid "less than one second"
+msgstr "мање од једне секунде"
+
+#. Translators: this is %d days
+#: src/common/tracker-utils.c:116
+#, c-format
+msgid " %dd"
+msgstr " %dд"
+
+#. Translators: this is %2.2d hours
+#: src/common/tracker-utils.c:120
+#, c-format
+msgid " %2.2dh"
+msgstr " %2.2dч"
+
+#. Translators: this is %2.2d minutes
+#: src/common/tracker-utils.c:124
+#, c-format
+msgid " %2.2dm"
+msgstr " %2.2dм"
+
+#. Translators: this is %2.2d seconds
+#: src/common/tracker-utils.c:128
+#, c-format
+msgid " %2.2ds"
+msgstr " %2.2dс"
+
+#: src/common/tracker-utils.c:132
+#, c-format
+msgid " %d day"
+msgid_plural " %d days"
+msgstr[0] " %d дан"
+msgstr[1] " %d дана"
+msgstr[2] " %d дана"
+msgstr[3] " %d дан"
+
+#: src/common/tracker-utils.c:136
+#, c-format
+msgid " %2.2d hour"
+msgid_plural " %2.2d hours"
+msgstr[0] " %2.2d сат"
+msgstr[1] " %2.2d сата"
+msgstr[2] " %2.2d сати"
+msgstr[3] " %2.2d сат"
+
+#: src/common/tracker-utils.c:140
+#, c-format
+msgid " %2.2d minute"
+msgid_plural " %2.2d minutes"
+msgstr[0] " %2.2d минут"
+msgstr[1] " %2.2d минута"
+msgstr[2] " %2.2d минута"
+msgstr[3] " %2.2d минут"
+
+#: src/common/tracker-utils.c:144
+#, c-format
+msgid " %2.2d second"
+msgid_plural " %2.2d seconds"
+msgstr[0] " %2.2d секунда"
+msgstr[1] " %2.2d секунде"
+msgstr[2] " %2.2d секунди"
+msgstr[3] " %2.2d секунда"
+
+#: src/control/tracker-main.c:61 src/extractor/tracker-main.c:94
+#: src/indexer/tracker-application.c:69 src/writeback/tracker-main.c:50
+msgid "Displays version information"
+msgstr "Исписује податке о издању програма"
+
+#. Translators: this messagge will apper immediately after the
+#. * usage string - Usage: COMMAND <THIS_MESSAGE>
+#.
+#: src/control/tracker-main.c:136 src/indexer/tracker-endpoint-helper.c:77
+msgid "— start the tracker index proxy"
+msgstr "— покреће посредника индекса трагача"
+
+#: src/extractor/tracker-main.c:75
+msgid "File to extract metadata for"
+msgstr "Датотека из које извлачити метаподатке"
+
+#: src/extractor/tracker-main.c:79
+msgid "MIME type for file (if not provided, this will be guessed)"
+msgstr "МИМЕ врста за датотеку (ако није достављена, биће погођена)"
+
+#: src/extractor/tracker-main.c:80
+msgid "MIME"
+msgstr "МИМЕ"
+
+#: src/extractor/tracker-main.c:86 src/indexer/tracker-endpoint-helper.c:40
+msgid "Socket file descriptor for peer-to-peer communication"
+msgstr "Описник датотеке прикључнице за комуникацију парњак-до-парњака"
+
+#: src/extractor/tracker-main.c:87 src/indexer/tracker-endpoint-helper.c:41
+msgid "FD"
+msgstr "ОД"
+
+#: src/extractor/tracker-main.c:90
+msgid "Filesystem root of the extracted data"
+msgstr "Корен система датотека издвојених података"
+
+#: src/extractor/tracker-main.c:262
+msgid "No metadata or extractor modules found to handle this file"
+msgstr ""
+"Нисам пронашао модуле метаподатака или извлачивача за руковање овом датотеком"
+
+#: src/extractor/tracker-main.c:270
+msgid "Metadata extraction failed"
+msgstr "Извлачење метаподатака није успело"
+
+#. Translators: this message will appear immediately after the
+#. usage string - Usage: COMMAND [OPTION]... <THIS_MESSAGE>
+#: src/extractor/tracker-main.c:333
+msgid "— Extract file meta data"
+msgstr "— Извлачи метаподатке датотеке"
+
+#: src/extractor/tracker-main.c:347
+msgid "Filename and mime type must be provided together"
+msgstr "Назив датотеке и миме врста морају бити достављени заједно"
+
+#: src/indexer/tracker-application.c:57
+msgid "Runs until all configured locations are indexed and then exits"
+msgstr "Ради све док не индексира сва подешена места и затим излази"
+
+#: src/indexer/tracker-application.c:61
+msgid "Checks if FILE is eligible for being mined based on configuration"
+msgstr ""
+"Проверава да ли је ДАТОТЕКА избирљива за ископавање на основу подешавања"
+
+#: src/indexer/tracker-application.c:65
+msgid "Avoids changes in the filesystem"
+msgstr "Спречава измене на систему датотека"
+
+#: src/indexer/tracker-application.c:1262
+#, c-format
+msgid "Data object “%s” currently exists"
+msgstr "Објекат података „%s“ тренутно постоји"
+
+#: src/indexer/tracker-application.c:1263
+#, c-format
+msgid "Data object “%s” currently does not exist"
+msgstr "Објекат података „%s“ тренутно не постоји"
+
+#: src/indexer/tracker-application.c:1289
+#, c-format
+msgid "Parent directory “%s” is NOT eligible to be indexed (based on filters)"
+msgstr ""
+"Полазни директоријум „%s“ НИЈЕ избирљив за индексирање (на основану филтера)"
+
+#: src/indexer/tracker-application.c:1295
+#, c-format
+msgid "Parent directory “%s” is NOT eligible to be indexed (hidden file)"
+msgstr ""
+"Полазни директоријум „%s“ НИЈЕ избирљив за индексирање (скривена датотека)"
+
+#: src/indexer/tracker-application.c:1301
+#, c-format
+msgid ""
+"Parent directory “%s” is NOT eligible to be indexed (based on content "
+"filters)"
+msgstr ""
+"Полазни директоријум „%s“ НИЈЕ избирљив за индексирање (на основану филтера "
+"садржаја)"
+
+#: src/indexer/tracker-application.c:1316
+msgid "Directory is NOT eligible to be indexed (based on filters)"
+msgstr "Директоријум НИЈЕ избирљив за индексирање (на основану филтера)"
+
+#: src/indexer/tracker-application.c:1320
+msgid "File is NOT eligible to be indexed (based on filters)"
+msgstr "Датотека НИЈЕ избирљива за индексирање (на основану филтера)"
+
+#: src/indexer/tracker-application.c:1323
+msgid "File is NOT eligible to be indexed (hidden file)"
+msgstr "Датотека НИЈЕ избирљива за индексирање (скривена датотека)"
+
+#: src/indexer/tracker-application.c:1325
+msgid "File is NOT eligible to be indexed (not an indexed folder)"
+msgstr "Датотека НИЈЕ избирљива за индексирање (није индексирана фасцикла)"
+
+#: src/indexer/tracker-application.c:1333
+msgid "Directory is eligible to be indexed"
+msgstr "Директоријум је избирљив за индексирање"
+
+#: src/indexer/tracker-application.c:1334
+msgid "File is eligible to be indexed"
+msgstr "Датотека је избирљива за индексирање"
+
+#: src/indexer/tracker-endpoint-helper.c:36
+msgid "Database location"
+msgstr "Локација базе података"
+
+#: src/indexer/tracker-endpoint-helper.c:37
+msgid "DIR"
+msgstr "ДИР"
+
+#: src/writeback/tracker-main.c:54
+msgid ""
+"Logging, 0 = errors only, 1 = minimal, 2 = detailed and 3 = debug (default=0)"
+msgstr ""
+"Записник, 0 = само грешке, 1 = најмање, 2 = детаљно и 3 = прочишћавање "
+"(задато=0)"
+
+#: src/writeback/tracker-main.c:61
+msgid "Disable shutting down after 30 seconds of inactivity"
+msgstr "Искључује гашење након 30 секунди неактивности"
+
+#. Translators: this message will appear immediately after the
+#. * usage string - Usage: COMMAND <THIS_MESSAGE>
+#.
+#: src/writeback/tracker-main.c:93
+msgid "— start the tracker writeback service"
+msgstr "— покреће трагачеву услугу повратног писања"
+
+#~ msgid "Error message"
+#~ msgstr "Порука грешке"
+
+#~ msgid "Cookie not recognized to resume paused miner"
+#~ msgstr "Колачић није препознат за оживљавање заустављеног копача"
+
+#~ msgid "Pause application and reason match an already existing pause request"
+#~ msgstr "Пауза програма и разлог одговарају већ постојећем захтеву паузе"

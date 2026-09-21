@@ -1,0 +1,30 @@
+# Inputs: mountPoint, mounted
+WITH tracker:FileSystem
+DELETE {
+  ?root tracker:available ?avail .
+} INSERT {
+  ?root tracker:available ~mounted .
+} WHERE {
+  ?root a tracker:IndexedFolder ;
+    nie:isStoredAs ~mountPoint .
+
+  OPTIONAL { ?root tracker:available ?avail } .
+};
+
+# Update plain tracker:available state on content specific graphs
+DELETE {
+  GRAPH ?g {
+    ?root tracker:available ?avail
+  }
+} INSERT {
+  GRAPH ?g {
+    ?root tracker:available ~mounted
+  }
+} WHERE {
+  GRAPH ?g {
+    ?root a tracker:IndexedFolder ;
+      nie:isStoredAs ~mountPoint .
+    OPTIONAL { ?root tracker:available ?avail }
+  }
+  FILTER (?g != tracker:FileSystem)
+}

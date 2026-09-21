@@ -1,0 +1,919 @@
+# Catalan translation of tracker.
+# Copyright © 2005, 2006 Free Software Foundation, Inc.
+# This file is distributed under the same license as the tracker package.
+# Gil Forcada <gilforcada@guifi.net>, 2007, 2008, 2010, 2013, 2014.
+# Jordi Mas i Hernàndez <jmas@softcatala.org>, 2015, 2025
+# Jordi Serratosa <jordis@softcatala.cat>, 2017.
+#
+# data miner -> extractor de dades
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Tracker\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/localsearch/issues/\n"
+"POT-Creation-Date: 2026-07-23 11:21+0000\n"
+"PO-Revision-Date: 2026-08-09 09:13+0000\n"
+"Last-Translator: Jordi Mas i Hernàndez <jmas@softcatala.org>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-DamnedLies-Scope: partial\n"
+"X-Generator: Minairó 0.1.0\n"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:23
+msgid "Max bytes to extract"
+msgstr "Bytes màxims que s'extrauran"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:24
+msgid "Maximum number of UTF-8 bytes to extract."
+msgstr "Nombre màxim de bytes UTF-8 que s'extrauran."
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:30
+msgid "Text file allowlist"
+msgstr "Fitxer de text de llista de permesos"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:31
+msgid "Filename patterns for plain text documents that should be indexed"
+msgstr ""
+"Patrons de nom de fitxer per a documents de text sense format que s'han "
+"d'indexar"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:37
+msgid "Wait for FS miner to be done before extracting"
+msgstr ""
+"Espera que l'extractor del sistema de fitxers acabi abans de l'extracció"
+
+#: data/org.freedesktop.Tracker.Extract.gschema.xml:38
+msgid ""
+"When true, tracker-extract will wait for tracker-miner-fs to be done "
+"crawling before extracting meta-data. This option is useful on constrained "
+"environment where it is important to list files as fast as possible and can "
+"wait to get meta-data later."
+msgstr ""
+"Si és «true» (cert), el tracker-extract esperarà que el tracker-miner-fs "
+"acabi el rastreig abans d'extreure metadades. Aquesta opció és útil en "
+"entorns restringits quan és important llistar els fitxers ràpidament i es "
+"pot esperar per a obtenir les metadades més tard."
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:24
+msgid "Enable stemmer"
+msgstr "Habilita l'stemmer"
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:25
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:31
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:37
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:24
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:31
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:38
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:45
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:52
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:71
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:77
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:83
+msgid "This setting is deprecated"
+msgstr "Aquest paràmetre està en desús"
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:30
+msgid "Enable unaccent"
+msgstr "Habilita la no accentuació"
+
+#: data/org.freedesktop.Tracker.FTS.gschema.xml:36
+msgid "Ignore numbers"
+msgstr "Ignora els nombres"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:23
+msgid "Initial sleep"
+msgstr "Temps d'espera inicial"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:30
+msgid "Throttle"
+msgstr "Limitació"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:37
+msgid "Low disk space limit"
+msgstr "Límit d'espai de disc mínim"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:44
+msgid "Crawling interval"
+msgstr "Interval de rastreig"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:51
+msgid "Removable devices’ data permanence threshold"
+msgstr "Llindar de permanència de les dades de dispositius extraïbles"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:58
+msgid "Enable monitors"
+msgstr "Habilita els monitors de seguiment"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:59
+msgid "Set to false to completely disable any file monitoring"
+msgstr ""
+"Establiu a «false» (fals) per a desactivar completament qualsevol tipus de "
+"seguiment de canvis als fitxers"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:64
+msgid "Index removable devices"
+msgstr "Indexa els dispositius extraïbles"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:65
+msgid ""
+"Set to true to enable indexing mounted directories for removable devices."
+msgstr ""
+"Establiu a «true» (cert) per a activar la indexació de directoris muntats de "
+"dispositius extraïbles."
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:70
+msgid "Index optical discs"
+msgstr "Indexa els discs òptics"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:76
+msgid "Index when running on battery"
+msgstr "Indexa quan s'estigui utilitzant la bateria"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:82
+msgid "Perform initial indexing when running on battery"
+msgstr "Realitza la indexació inicial quan s'estigui utilitzant la bateria"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:88
+msgid "Directories to index recursively"
+msgstr "Directoris que s'han d'indexar de forma recursiva"
+
+#. Translators: Do NOT translate the directories names in capital. Those
+#. are keys used by Tracker.
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:91
+msgid ""
+"List of directories to index recursively, Special values include: "
+"‘&DESKTOP’, ‘&DOCUMENTS’, ‘&DOWNLOAD’, ‘&MUSIC’, ‘&PICTURES’, "
+"‘&PUBLIC_SHARE’, ‘&TEMPLATES’, ‘&VIDEOS’. See /etc/xdg/user-dirs.defaults "
+"and $HOME/.config/user-dirs.default"
+msgstr ""
+"Llista de directoris a indexar de forma recursiva, els valors especials "
+"inclouen: «&DOCUMENTS», «&DOWNLOAD», «&MUSIC», «&PICTURES», «&PUBLIC_SHARE», "
+"«&TEMPLATES», «&VIDEOS». Vegeu /etc/xdg/user-dirs.defaults i $HOME/.config/"
+"user-dirs.default"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:102
+msgid "Directories to index non-recursively"
+msgstr "Directoris a indexar de manera no recursiva"
+
+#. Translators: Do NOT translate the directories names in capital. Those
+#. are keys used by Tracker.
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:105
+msgid ""
+"List of directories to index without inspecting subfolders, Special values "
+"include: ‘&DESKTOP’, ‘&DOCUMENTS’, ‘&DOWNLOAD’, ‘&MUSIC’, ‘&PICTURES’, "
+"‘&PUBLIC_SHARE’, ‘&TEMPLATES’, ‘&VIDEOS’. See /etc/xdg/user-dirs.defaults "
+"and $HOME/.config/user-dirs.default"
+msgstr ""
+"Llista de directoris a indexar sense inspeccionar les subcarpetes, els "
+"valors especials inclouen: «&DESKTOP», «&DOCUMENTS», «&DOWNLOAD», «&MUSIC», "
+"«&PICTURES», «&PUBLIC_SHARE», «&TEMPLATES», «&VIDEOS». Vegeu /etc/xdg/user-"
+"dirs.defaults i $HOME/.config/user-dirs.default"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:116
+msgid "Ignored files"
+msgstr "Fitxers ignorats"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:117
+msgid "List of file patterns to avoid"
+msgstr "Llista de patrons de noms de fitxer que s'han d'ignorar"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:122
+msgid "Ignored directories"
+msgstr "Directoris ignorats"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:123
+msgid "List of directories to avoid"
+msgstr "Llista de directoris que s'han d'ignorar"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:128
+msgid "Ignored directories with content"
+msgstr "Directoris ignorats amb contingut"
+
+#: data/org.freedesktop.Tracker.Miner.Files.gschema.xml:129
+msgid "Avoid any directory containing a file blocklisted here"
+msgstr ""
+"Evita qualsevol directori que contingui un fitxer d'aquesta llista de blocats"
+
+#: src/cli/main.c:68
+msgid "Show help on subcommands"
+msgstr "Mostra l'ajuda sobre les subordres"
+
+#: src/cli/main.c:69
+msgid "Show metadata extractor output"
+msgstr "Mostra la sortida de l'extractor de metadades"
+
+#: src/cli/main.c:70 src/cli/tracker-index.c:382
+msgid "List and change indexed folders"
+msgstr "Mostra i modifica les carpetes indexades"
+
+#: src/cli/main.c:71 src/cli/tracker-info.c:533
+msgid "Retrieve information available for files and resources"
+msgstr "Recupera la informació disponible sobre els fitxers i els recursos"
+
+#: src/cli/main.c:72 src/cli/tracker-inhibit.c:98
+msgid "Inhibit indexing temporarily"
+msgstr "Inhibeix temporalment la indexació"
+
+#: src/cli/main.c:73 src/cli/tracker-reset.c:202
+msgid "Erase the indexed data"
+msgstr "Suprimeix les dades indexades"
+
+#: src/cli/main.c:74 src/cli/tracker-search.c:415
+msgid "Search for content"
+msgstr "Cerca continguts"
+
+#: src/cli/main.c:75 src/cli/tracker-status.c:722
+msgid "Provide status and statistics on the data indexed"
+msgstr "Proporciona l'estat i estadístiques de les dades indexades"
+
+#: src/cli/main.c:76 src/cli/tracker-tag.c:411
+msgid "Add, remove and list tags"
+msgstr "Afegeix, suprimeix i llista etiquetes"
+
+#: src/cli/main.c:77
+msgid "Sandbox for a testing environment"
+msgstr "Sorral («Sandbox») per a un entorn de proves"
+
+#: src/cli/main.c:122
+msgid "Available localsearch commands are:"
+msgstr "Les ordres «localsearch» disponibles són:"
+
+#: src/cli/main.c:141
+msgid "See “localsearch help <command>” to read about a specific subcommand."
+msgstr ""
+"Vegeu «localsearch help <ordre>» per llegir sobre una subordre específica."
+
+#: src/cli/main.c:184
+#, c-format
+msgid "“%s” is not a localsearch command. See “localsearch --help”"
+msgstr "«%s» no és una ordre «localsearch». Vegeu «localsearch --help»"
+
+#: src/cli/tracker-cli-utils.c:194 src/cli/tracker-status.c:376
+msgid "Message"
+msgstr "Missatge"
+
+#: src/cli/tracker-extract.c:44 src/cli/tracker-info.c:75
+#: src/extractor/tracker-main.c:82
+msgid "Output results format: “turtle”, “trig” or “json-ld”"
+msgstr "Format dels resultats de sortida: «turtle», «trig» o «json-ld»"
+
+#: src/cli/tracker-extract.c:45 src/cli/tracker-info.c:76
+#: src/extractor/tracker-main.c:83
+msgid "FORMAT"
+msgstr "FORMAT"
+
+#: src/cli/tracker-extract.c:47 src/cli/tracker-extract.c:48
+#: src/cli/tracker-index.c:60 src/cli/tracker-index.c:61
+#: src/cli/tracker-info.c:84 src/cli/tracker-info.c:85
+#: src/cli/tracker-reset.c:52 src/extractor/tracker-main.c:76
+#: src/extractor/tracker-main.c:91 src/indexer/tracker-application.c:66
+msgid "FILE"
+msgstr "FITXER"
+
+#: src/cli/tracker-extract.c:94
+msgid "Could not run tracker-extract: "
+msgstr "No s'ha pogut executar «tracker-extract»: "
+
+#: src/cli/tracker-extract.c:131
+msgid "Extract metadata from a file"
+msgstr "Extreu les metadades d'un fitxer"
+
+#: src/cli/tracker-extract.c:138 src/cli/tracker-index.c:387
+#: src/cli/tracker-info.c:540 src/cli/tracker-inhibit.c:113
+#: src/cli/tracker-reset.c:207 src/cli/tracker-search.c:428
+#: src/cli/tracker-status.c:727 src/cli/tracker-tag.c:416
+msgid "Unrecognized options"
+msgstr "No s'han reconegut les opcions"
+
+#: src/cli/tracker-index.c:51
+msgid "Adds FILE as an indexed location"
+msgstr "Afegeix FITXER com a ubicació indexada"
+
+#: src/cli/tracker-index.c:54
+msgid "Removes FILE from indexed locations"
+msgstr "Elimina el FITXER de les ubicacions indexades"
+
+#: src/cli/tracker-index.c:57
+msgid "Makes indexing recursive"
+msgstr "Fa que la indexació sigui recursiva"
+
+#: src/cli/tracker-index.c:205
+#, c-format
+msgid "“%s” is not a directory"
+msgstr "«%s» no és un directori"
+
+#. TRANSLATORS: These are commandline options
+#: src/cli/tracker-index.c:281
+msgid "Either --add or --remove must be provided"
+msgstr "S'ha de proporcionar --add o --remove"
+
+#. TRANSLATORS: These are commandline options
+#: src/cli/tracker-index.c:285
+msgid "--add and --remove are mutually exclusive"
+msgstr "--add i --remove són mútuament excloents"
+
+#. TRANSLATORS: These are commandline options
+#: src/cli/tracker-index.c:295
+msgid "--recursive requires --add"
+msgstr "--recursive requereix --add"
+
+#: src/cli/tracker-index.c:353 src/cli/tracker-status.c:375
+msgid "Path"
+msgstr "Camí"
+
+#: src/cli/tracker-index.c:354
+msgid "Recursive"
+msgstr "Recursiu"
+
+#: src/cli/tracker-index.c:396
+msgid "Please specify one or more locations to index."
+msgstr "Especifiqueu una o més ubicacions a indexar."
+
+#: src/cli/tracker-info.c:67
+msgid "Show full namespaces (i.e. don’t use nie:title, use full URLs)"
+msgstr ""
+"Mostra els espais de noms complets (p. ex. no utilitzeu nie:title, utilitzeu "
+"URL complets)"
+
+#: src/cli/tracker-info.c:71
+msgid "Show plain text content if available for resources"
+msgstr "Mostra el contingut del text pla si està disponible per als recursos"
+
+#: src/cli/tracker-info.c:78
+msgid "Checks if FILE is eligible for being indexed"
+msgstr "Comprova si el FITXER es pot indexar"
+
+#: src/cli/tracker-info.c:81 src/cli/tracker-search.c:189
+#: src/cli/tracker-status.c:80
+msgid "Removable device mount point to query"
+msgstr "Punt de muntatge del dispositiu extraïble a consultar"
+
+#: src/cli/tracker-info.c:357 src/cli/tracker-search.c:370
+#: src/cli/tracker-status.c:158 src/cli/tracker-status.c:276
+msgid "Could not connect to LocalSearch"
+msgstr "No s'ha pogut connectar amb el LocalSearch"
+
+#: src/cli/tracker-info.c:405
+msgid "Unable to retrieve data for URI"
+msgstr "No s'han pogut recuperar les dades de l'URI"
+
+#: src/cli/tracker-info.c:412
+msgid "No metadata available for that URI"
+msgstr "No hi ha metadades disponibles per a aquest URI"
+
+#: src/cli/tracker-info.c:422 src/cli/tracker-info.c:499
+msgid "Could not get eligible status: "
+msgstr "No s'ha pogut obtenir l'estat d'elegibilitat: "
+
+#: src/cli/tracker-info.c:451 src/extractor/tracker-main.c:165
+#, c-format
+msgid "Unsupported serialization format “%s”\n"
+msgstr "Format de serialització no compatible «%s»\n"
+
+#: src/cli/tracker-inhibit.c:39
+msgid "List inhibitions"
+msgstr "Llista les inhibicions"
+
+#: src/cli/tracker-inhibit.c:45
+msgid "command"
+msgstr "ordre"
+
+#: src/cli/tracker-inhibit.c:46
+msgid "COMMAND"
+msgstr "ORDRE"
+
+#: src/cli/tracker-inhibit.c:65
+msgid "Application"
+msgstr "Aplicació"
+
+#: src/cli/tracker-inhibit.c:66
+msgid "Reason"
+msgstr "Raó"
+
+#: src/cli/tracker-inhibit.c:136
+msgid "Indexing inhibited through command line"
+msgstr "S'ha inhibit la indexació mitjançant la línia d'ordres"
+
+#: src/cli/tracker-inhibit.c:160
+msgid "Failed to inhibit indexer"
+msgstr "No s'ha pogut inhibir l'indexador"
+
+#: src/cli/tracker-process.c:89
+msgid "Could not terminate indexer"
+msgstr "No s'ha pogut finalitzar l'indexador"
+
+#: src/cli/tracker-process.c:92
+msgid "Indexer process terminated"
+msgstr "S'ha finalitzat el procés de l'indexador"
+
+#: src/cli/tracker-reset.c:48
+msgid "Remove filesystem indexer database"
+msgstr "Elimina la base de dades de l'indexador del sistema de fitxers"
+
+#: src/cli/tracker-reset.c:51
+msgid ""
+"Erase indexed information about a file, works recursively for directories"
+msgstr ""
+"Esborra la informació sobre un fitxer indexat, que funciona de manera "
+"recursiva per als directoris"
+
+#. Now, delete the element recursively
+#: src/cli/tracker-reset.c:95
+msgid "Deleting…"
+msgstr "S'està suprimint…"
+
+#: src/cli/tracker-reset.c:111
+msgid ""
+"The indexed data for this file has been deleted and will be reindexed again."
+msgstr ""
+"Les dades indexades per a aquest fitxer han estat esborrades i es "
+"reindexaran de nou."
+
+#: src/cli/tracker-reset.c:223
+msgid "The LocalSearch indexed data is about to be deleted, proceed? [y/N]"
+msgstr ""
+"Les dades indexades del LocalSearch estan a punt de ser esborrades, voleu "
+"continuar? [s/N]"
+
+#. TRANSLATORS: this is our test for a [y|N] question in the command line.
+#. * A partial or full match will be considered an affirmative answer,
+#. * it is intentionally lowercase, so please keep it like this.
+#.
+#: src/cli/tracker-reset.c:231
+msgid "yes"
+msgstr "sí"
+
+#: src/cli/tracker-search.c:115
+msgid "Results"
+msgstr "Resultats"
+
+#: src/cli/tracker-search.c:116 src/cli/tracker-search.c:117
+#: src/cli/tracker-search.c:119 src/cli/tracker-search.c:122
+#: src/cli/tracker-search.c:123 src/cli/tracker-search.c:124
+msgid "Files"
+msgstr "Fitxers"
+
+#: src/cli/tracker-search.c:118
+msgid "Folders"
+msgstr "Carpetes"
+
+#: src/cli/tracker-search.c:120
+msgid "Albums"
+msgstr "Àlbums"
+
+#: src/cli/tracker-search.c:121
+msgid "Artists"
+msgstr "Artistes"
+
+#: src/cli/tracker-search.c:132
+msgid "Search for files"
+msgstr "Cercar els fitxers"
+
+#: src/cli/tracker-search.c:136
+msgid "Search for folders"
+msgstr "Cerca per carpetes"
+
+#: src/cli/tracker-search.c:140
+msgid "Search for audio files"
+msgstr "Cerca per fitxers d'àudio"
+
+#: src/cli/tracker-search.c:144
+msgid "Search for music albums"
+msgstr "Cerca per àlbums de música"
+
+#: src/cli/tracker-search.c:148
+msgid "Search for music artists"
+msgstr "Cerca per artistes de música"
+
+#: src/cli/tracker-search.c:152
+msgid "Search for image files"
+msgstr "Cerca per fitxers d'imatges"
+
+#: src/cli/tracker-search.c:156
+msgid "Search for video files"
+msgstr "Cerca per fitxers de vídeos"
+
+#: src/cli/tracker-search.c:160
+msgid "Search for document files"
+msgstr "Cerca per fitxers de documents"
+
+#: src/cli/tracker-search.c:164
+msgid "Search for software files"
+msgstr "Cerca per fitxers de programari"
+
+#: src/cli/tracker-search.c:173 src/cli/tracker-tag.c:87
+msgid "Limit the number of results shown"
+msgstr "Limita el nombre de resultats mostrats"
+
+#: src/cli/tracker-search.c:177 src/cli/tracker-tag.c:91
+msgid "Offset the results"
+msgstr "Desplaça els resultats"
+
+#: src/cli/tracker-search.c:181
+msgid "Show URNs for results"
+msgstr "Mostra les URN per als resultats"
+
+#: src/cli/tracker-search.c:185
+msgid "Return all non-existing matches too (i.e. include unmounted volumes)"
+msgstr ""
+"Retorna totes les coincidències no existents (per exemple inclou els volums "
+"que no estiguin muntats)"
+
+#: src/cli/tracker-search.c:193
+msgid "Show help options"
+msgstr "Mostra les opcions d'ajuda"
+
+#: src/cli/tracker-search.c:200 src/cli/tracker-status.c:85
+msgid "search terms"
+msgstr "termes de cerca"
+
+#: src/cli/tracker-search.c:201
+msgid "TERMS"
+msgstr "TERMES"
+
+#: src/cli/tracker-status.c:68
+msgid "Follow status changes as they happen"
+msgstr "Segueix els canvis d'estat a mesura que passen"
+
+#: src/cli/tracker-status.c:72
+msgid "Show statistics for current index / data set"
+msgstr "Mostra estadístiques de l'índex actual i el conjunt de dades"
+
+#: src/cli/tracker-status.c:76
+msgid ""
+"Watch changes to the database in real time (e.g. resources or files being "
+"added)"
+msgstr ""
+"Fes un seguiment dels canvis a la base de dades en temps real (p. ex. que "
+"s'afegeixin recursos o fitxers)"
+
+#: src/cli/tracker-status.c:86
+msgid "EXPRESSION"
+msgstr "EXPRESSIÓ"
+
+#: src/cli/tracker-status.c:172 src/cli/tracker-status.c:295
+#: src/cli/tracker-status.c:317
+msgid "Could not get LocalSearch statistics"
+msgstr "No s'han pogut obtenir les estadístiques del LocalSearch"
+
+#: src/cli/tracker-status.c:429
+#, c-format
+msgid "Currently indexed"
+msgstr "Actualment indexat"
+
+#: src/cli/tracker-status.c:432 src/cli/tracker-tag.c:179
+#, c-format
+msgid "%d file"
+msgid_plural "%d files"
+msgstr[0] "%d fitxer"
+msgstr[1] "%d fitxers"
+
+#: src/cli/tracker-status.c:438
+#, c-format
+msgid "%d folder"
+msgid_plural "%d folders"
+msgstr[0] "%d carpeta"
+msgstr[1] "%d carpetes"
+
+#: src/cli/tracker-status.c:452
+msgid "Remaining space on database partition"
+msgstr "Espai lliure a la partició de la base de dades"
+
+#: src/cli/tracker-status.c:462 src/cli/tracker-status.c:614
+msgid "Indexer is paused"
+msgstr "L'indexador està en pausa"
+
+#: src/cli/tracker-status.c:463
+msgid "Data is still being indexed"
+msgstr "Les dades encara s'estan indexant"
+
+#: src/cli/tracker-status.c:465
+msgid "Indexer is idle"
+msgstr "L'indexador està inactiu"
+
+#: src/cli/tracker-status.c:472
+#, c-format
+msgid "%d recorded failure"
+msgid_plural "%d recorded failures"
+msgstr[0] "%d fallada enregistrada"
+msgstr[1] "%d fallades enregistrades"
+
+#: src/cli/tracker-status.c:502
+msgid "No reports found"
+msgstr "No s'ha trobat cap informe"
+
+#: src/cli/tracker-status.c:679
+msgid "Could not get SPARQL connection"
+msgstr "No s'ha pogut obtenir una connexió SPARQL"
+
+#: src/cli/tracker-status.c:688
+msgid "Now listening to database updates"
+msgstr "S'està seguint si hi ha actualitzacions a la base de dades"
+
+#: src/cli/tracker-status.c:689
+msgid "Press Ctrl+C to stop"
+msgstr "Premeu Ctrl+C per a aturar"
+
+#: src/cli/tracker-tag.c:67
+msgid "List all tags"
+msgstr "Llista totes les etiquetes"
+
+#: src/cli/tracker-tag.c:71
+msgid "Show files associated with each tag (this is only used with --list)"
+msgstr ""
+"Mostra els fitxers associats a cada etiqueta (només s'utilitza amb «--list»)"
+
+#: src/cli/tracker-tag.c:75
+msgid "Add a tag (if FILEs are omitted, TAG is not associated with any files)"
+msgstr ""
+"Afegeix una etiqueta (si s'omet «FITXER» no s'associa cap fitxer amb "
+"l'«ETIQUETA»)"
+
+#: src/cli/tracker-tag.c:76 src/cli/tracker-tag.c:80
+msgid "TAG"
+msgstr "ETIQUETA"
+
+#: src/cli/tracker-tag.c:79
+msgid "Delete a tag (if FILEs are omitted, TAG is removed for all files)"
+msgstr ""
+"Suprimeix una etiqueta (si s'omet «FITXERS» se suprimirà l'«ETIQUETA» de "
+"tots els fitxers)"
+
+#: src/cli/tracker-tag.c:83
+msgid "Description for a tag (this is only used with --add)"
+msgstr "Descripció de l'etiqueta (només s'utilitza amb «--add»)"
+
+#: src/cli/tracker-tag.c:84
+msgid "STRING"
+msgstr "CADENA"
+
+#: src/cli/tracker-tag.c:96
+msgid "FILE…"
+msgstr "FITXER…"
+
+#: src/cli/tracker-tag.c:119
+msgid "Could not get files related to tag"
+msgstr "No s'han pogut obtenir els fitxers relacionats amb l'etiqueta"
+
+#: src/cli/tracker-tag.c:150 src/cli/tracker-tag.c:334
+msgid "Could not get all tags"
+msgstr "No s'han pogut obtenir totes les etiquetes"
+
+#: src/cli/tracker-tag.c:155
+msgid "Tags (shown by name)"
+msgstr "Etiquetes (se'n mostra el nom)"
+
+#: src/cli/tracker-tag.c:216
+msgid "Could not add tag"
+msgstr "No s'ha pogut afegir l'etiqueta"
+
+#: src/cli/tracker-tag.c:221
+msgid "Tag was added successfully"
+msgstr "S'ha afegit l'etiqueta correctament"
+
+#: src/cli/tracker-tag.c:247
+msgid "Could not add tag to files"
+msgstr "No s'ha pogut afegir l'etiqueta als fitxers"
+
+#: src/cli/tracker-tag.c:252
+msgid "Tagged"
+msgstr "Etiquetat"
+
+#: src/cli/tracker-tag.c:277 src/cli/tracker-tag.c:305
+msgid "Could not remove tag"
+msgstr "No s'ha pogut suprimir l'etiqueta"
+
+#: src/cli/tracker-tag.c:282 src/cli/tracker-tag.c:310
+msgid "Tag was removed successfully"
+msgstr "S'ha suprimit l'etiqueta correctament"
+
+#: src/cli/tracker-tag.c:357
+msgid "Could not establish a connection to LocalSearch"
+msgstr "No s'ha pogut establir una connexió amb el LocalSearch"
+
+#: src/cli/tracker-tag.c:421
+msgid "The --list option is required for --show-files"
+msgstr "L'opció «--show-files» requereix també l'opció «--list»"
+
+#: src/cli/tracker-tag.c:423
+msgid "Add and delete actions can not be used together"
+msgstr "No es poden utilitzar alhora les accions d'afegir i suprimir"
+
+#: src/cli/tracker-tag.c:425
+msgid "The --description option can only be used with --add"
+msgstr "L'opció «--description» només es pot utilitzar juntament amb «--add»"
+
+#: src/common/tracker-utils.c:101 src/common/tracker-utils.c:152
+msgid "less than one second"
+msgstr "menys d'un segon"
+
+#. Translators: this is %d days
+#: src/common/tracker-utils.c:116
+#, c-format
+msgid " %dd"
+msgstr " %dd"
+
+#. Translators: this is %2.2d hours
+#: src/common/tracker-utils.c:120
+#, c-format
+msgid " %2.2dh"
+msgstr " %2.2d h"
+
+#. Translators: this is %2.2d minutes
+#: src/common/tracker-utils.c:124
+#, c-format
+msgid " %2.2dm"
+msgstr " %2.2d m"
+
+#. Translators: this is %2.2d seconds
+#: src/common/tracker-utils.c:128
+#, c-format
+msgid " %2.2ds"
+msgstr " %2.2d s"
+
+#: src/common/tracker-utils.c:132
+#, c-format
+msgid " %d day"
+msgid_plural " %d days"
+msgstr[0] " %d dia"
+msgstr[1] " %d dies"
+
+#: src/common/tracker-utils.c:136
+#, c-format
+msgid " %2.2d hour"
+msgid_plural " %2.2d hours"
+msgstr[0] " %2.2d hora"
+msgstr[1] " %2.2d hores"
+
+#: src/common/tracker-utils.c:140
+#, c-format
+msgid " %2.2d minute"
+msgid_plural " %2.2d minutes"
+msgstr[0] " %2.2d minut"
+msgstr[1] " %2.2d minuts"
+
+#: src/common/tracker-utils.c:144
+#, c-format
+msgid " %2.2d second"
+msgid_plural " %2.2d seconds"
+msgstr[0] " %2.2d segon"
+msgstr[1] " %2.2d segons"
+
+#: src/control/tracker-main.c:56 src/extractor/tracker-main.c:94
+#: src/indexer/tracker-application.c:73 src/writeback/tracker-main.c:50
+msgid "Displays version information"
+msgstr "Mostra la informació de la versió"
+
+#. Translators: this messagge will apper immediately after the
+#. * usage string - Usage: COMMAND <THIS_MESSAGE>
+#.
+#: src/control/tracker-main.c:116 src/indexer/tracker-endpoint-helper.c:77
+msgid "— start the tracker index proxy"
+msgstr "— inicia el servidor intermediari de l'índex del Tracker"
+
+#: src/extractor/tracker-main.c:75
+msgid "File to extract metadata for"
+msgstr "Fitxer del qual extreure'n les metadades"
+
+#: src/extractor/tracker-main.c:79
+msgid "MIME type for file (if not provided, this will be guessed)"
+msgstr "Tipus MIME per al fitxer (s'intentarà esbrinar si no es proporciona)"
+
+#: src/extractor/tracker-main.c:80
+msgid "MIME"
+msgstr "MIME"
+
+#: src/extractor/tracker-main.c:86 src/indexer/tracker-endpoint-helper.c:40
+msgid "Socket file descriptor for peer-to-peer communication"
+msgstr "Descriptor de fitxer de sòcol per a la comunicació «peer-to-peer»"
+
+#: src/extractor/tracker-main.c:87 src/indexer/tracker-endpoint-helper.c:41
+msgid "FD"
+msgstr "FD"
+
+#: src/extractor/tracker-main.c:90
+msgid "Filesystem root of the extracted data"
+msgstr "Arrel del sistema de fitxers de les dades extretes"
+
+#: src/extractor/tracker-main.c:235
+msgid "No metadata or extractor modules found to handle this file"
+msgstr ""
+"No s'han trobat mòduls de metadades o extractors per a gestionar aquest "
+"fitxer"
+
+#: src/extractor/tracker-main.c:243
+msgid "Metadata extraction failed"
+msgstr "Ha fallat l'extractor de metadades"
+
+#. Translators: this message will appear immediately after the
+#. usage string - Usage: COMMAND [OPTION]... <THIS_MESSAGE>
+#: src/extractor/tracker-main.c:306
+msgid "— Extract file meta data"
+msgstr "— Extreu les metadades del fitxer"
+
+#: src/extractor/tracker-main.c:320
+msgid "Filename and mime type must be provided together"
+msgstr "S'ha de proporcionar alhora el nom de fitxer i el tipus MIME"
+
+#: src/indexer/tracker-application.c:57
+msgid "Runs until all configured locations are indexed and then exits"
+msgstr ""
+"Executa fins que totes les ubicacions configurades s'hagin indexat i "
+"aleshores surt"
+
+#: src/indexer/tracker-application.c:61
+#| msgid "Metadata extraction failed"
+msgid "Skips metadata extraction from file content"
+msgstr "Omet l'extracció de metadades del contingut del fitxer"
+
+#: src/indexer/tracker-application.c:65
+msgid "Checks if FILE is eligible for being mined based on configuration"
+msgstr ""
+"Comprova si, segons la configuració, s'han d'extreure les dades del FITXER"
+
+#: src/indexer/tracker-application.c:69
+msgid "Avoids changes in the filesystem"
+msgstr "Evita canvis al sistema de fitxers"
+
+#: src/indexer/tracker-application.c:1283
+#, c-format
+msgid "Data object “%s” currently exists"
+msgstr "L'objecte de dades «%s» ja existeix"
+
+#: src/indexer/tracker-application.c:1284
+#, c-format
+msgid "Data object “%s” currently does not exist"
+msgstr "L'objecte de dades «%s» encara no existeix"
+
+#: src/indexer/tracker-application.c:1310
+#, c-format
+msgid "Parent directory “%s” is NOT eligible to be indexed (based on filters)"
+msgstr "El directori pare «%s» no és apte per a ser indexat (basat en filtres)"
+
+#: src/indexer/tracker-application.c:1315
+#, c-format
+msgid "Parent directory “%s” is NOT eligible to be indexed (hidden file)"
+msgstr "El directori pare «%s» no és apte per a ser indexat (fitxer amagat)"
+
+#: src/indexer/tracker-application.c:1321
+#, c-format
+msgid ""
+"Parent directory “%s” is NOT eligible to be indexed (based on content "
+"filters)"
+msgstr ""
+"El directori pare «%s» no és apte per a ser indexat (basat en filtres de "
+"contingut)"
+
+#: src/indexer/tracker-application.c:1336
+msgid "Directory is NOT eligible to be indexed (based on filters)"
+msgstr "El directori no és apte per a ser indexat (basat en filtres)"
+
+#: src/indexer/tracker-application.c:1340
+msgid "File is NOT eligible to be indexed (based on filters)"
+msgstr "El fitxer no és apte per a ser indexat (basant-se en les regles)"
+
+#: src/indexer/tracker-application.c:1342
+msgid "File is NOT eligible to be indexed (hidden file)"
+msgstr "El fitxer no és apte per a ser indexat (fitxer amagat)"
+
+#: src/indexer/tracker-application.c:1344
+msgid "File is NOT eligible to be indexed (not an indexed folder)"
+msgstr "El fitxer no és apte per a ser indexat (no és una carpeta indexada)"
+
+#: src/indexer/tracker-application.c:1352
+msgid "Directory is eligible to be indexed"
+msgstr "El directori és apte per a ser indexat"
+
+#: src/indexer/tracker-application.c:1353
+msgid "File is eligible to be indexed"
+msgstr "El fitxer és apte per a ser indexat"
+
+#: src/indexer/tracker-endpoint-helper.c:36
+msgid "Database location"
+msgstr "Ubicació de la base de dades"
+
+#: src/indexer/tracker-endpoint-helper.c:37
+msgid "DIR"
+msgstr "DIR"
+
+#: src/writeback/tracker-main.c:54
+msgid ""
+"Logging, 0 = errors only, 1 = minimal, 2 = detailed and 3 = debug (default=0)"
+msgstr ""
+"Registre, 0 = només errors, 1 = mínim, 2 = detallat i 3 = depuració "
+"(predeterminat=0)"
+
+#: src/writeback/tracker-main.c:61
+msgid "Disable shutting down after 30 seconds of inactivity"
+msgstr "Inhabilita l'aturada després de 30 segons d'inactivitat"
+
+#. Translators: this message will appear immediately after the
+#. * usage string - Usage: COMMAND <THIS_MESSAGE>
+#.
+#: src/writeback/tracker-main.c:93
+msgid "— start the tracker writeback service"
+msgstr "— inicia el servei d'escriptura del Tracker"

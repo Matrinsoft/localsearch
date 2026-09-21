@@ -1,0 +1,6 @@
+[wrap-git]
+directory = tinysparql
+url = https://gitlab.gnome.org/GNOME/tinysparql.git
+# FIXME: bump to next stable release containing this commit
+revision = 524386e98eff213429143020340bb2528d2bc637
+depth = 1

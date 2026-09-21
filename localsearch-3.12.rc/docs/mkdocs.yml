@@ -1,0 +1,23 @@
+site_name: LocalSearch
+site_description: LocalSearch API reference
+docs_dir: ./reference
+site_url: https://gnome.pages.gitlab.gnome.org/localsearch/
+repo_url: https://gitlab.gnome.org/GNOME/localsearch/
+edit_uri: blob/main/docs/reference
+use_directory_urls: false
+
+nav:
+  - Overview: 'overview.md'
+  - Indexed data: 'indexed-data.md'
+  - Querying LocalSearch: 'endpoint.md'
+  - Miscellaneous D-Bus API: 'dbus-api.md'
+  - Commandline reference: 'commandline.md'
+  - Handling of corrupted databases: 'corruption.md'
+  - Removable devices: 'removable-devices.md'
+
+theme:
+  name: readthedocs
+
+markdown_extensions:
+  - toc:
+      permalink: true
